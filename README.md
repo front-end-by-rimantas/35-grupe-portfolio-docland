@@ -1,4 +1,4 @@
-# Braintech portfolio
+# DOCLand portfolio
 
 _35 group website project_
 
@@ -22,7 +22,7 @@ Design: https://themelooks.org/demo/docland/html/home-course.html
 ## Authors
 
 Diana O: [Github](https://github.com/Nuotaikos)
-Egle N: [Github] (https://github.com/EgleNem)
-Rugile: [Github] (https://github.com/kauste)
-Lukas T: [Github] (https://github.com/lukastabu)
+Egle N: [Github](https://github.com/EgleNem)
+Rugile: [Github](https://github.com/kauste)
+Lukas T: [Github](https://github.com/lukastabu)
 Laurynas D: [Github](https://github.com/laurisdid)

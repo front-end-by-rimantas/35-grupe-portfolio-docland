@@ -1,18 +1,12 @@
-![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
-![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
-![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
-![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
-[![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
-
-# React portfolio
+# Braintech portfolio
 
 _35 group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio-docland/
 
-Design: https://react.theme-land.com/theme-five
+Design: https://themelooks.org/demo/docland/html/home-course.html
 
 ## Project features
 
@@ -27,4 +21,8 @@ Design: https://react.theme-land.com/theme-five
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Diana O: [Github](https://github.com/Nuotaikos)
+Egle N: [Github] (https://github.com/EgleNem)
+Rugile: [Github] (https://github.com/kauste)
+Lukas T: [Github] (https://github.com/lukastabu)
+Laurynas D: [Github](https://github.com/laurisdid)

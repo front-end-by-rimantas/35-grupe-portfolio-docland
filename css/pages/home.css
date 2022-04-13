@@ -28,7 +28,8 @@
 /*  course slide starts here */
 .buttonai{
     float: right;
-
+position: absolute;
+right: 300px;
 }
 
 .buttonai > .btnKaire{
@@ -43,6 +44,17 @@ margin-right: 20px;
     height: 50px;
     color: aquamarine;
     background: aqua;
+}
+.caruimg{
+    height: 300px
+    
+}
+.carusel{
+    text-align: center;
+
+    background-color: blueviolet;
+    margin: 5px;
+    float :left;
 }
 /*  course slide ends here */
 

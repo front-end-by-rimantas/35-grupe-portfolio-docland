@@ -24,7 +24,7 @@
 .right-column .pic-under {
     position: absolute;
     z-index: -1;
-    max-width: 100%;
+    width: 70%;
     object-fit: fit-content;
     top: -60px;
     left: -70px;
@@ -33,7 +33,7 @@
 .right-column .pic-under2 {
     position: absolute;
     z-index: -1;
-    max-width: 100%;
+    width: 70%;
     object-fit: fit-content;
     right: -1px;
     bottom: -60px;
@@ -45,15 +45,8 @@
 }
 
 .right-column > .hero-video > .upper-pic{
-    max-width: 100%;
+    width: 100%;
     height:fit-content;
-}
-.right-column .triangle-right {
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-left: 20px solid #000;
-	border-bottom: 10px solid transparent;
 }
 /*  hero ends here */
 

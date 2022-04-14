@@ -26,6 +26,56 @@
 /*  countdown ends here */
 
 /*  course slide starts here */
+.buttonai{
+    float: right;
+position: relative;
+right:30px
+}
+
+.buttonai > .btnKaire{
+width: 50px;
+height: 50px;
+color: white;
+background: aqua;
+margin-right: 20px;
+border:none;
+font-size: 30px;
+}
+.buttonai > .btnDesine{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: aqua;
+    border:none;
+    font-size: 30px
+}
+.hedercarusel{
+    font-size: 40px;
+}
+.caruimg{
+    height: 350px;
+    width : 250px;
+    padding: 40px;
+    padding-bottom: 25px;
+    filter: invert(100%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+.textUnder{
+    display: block;
+   color:white;
+   font-size: 25px;
+}
+.maxheight{
+    max-height: 400px;
+}
+.carusel{
+    text-align: center;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 12.5px;
+    float :left;
+    border-radius: 20px;
+    
+}
 /*  course slide ends here */
 
 /*  course syllabus starts here */

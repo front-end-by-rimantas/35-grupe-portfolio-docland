@@ -99,6 +99,8 @@ font-size: 30px;
 /*  footer starts here */
 .clickable{
     list-style-type: none;
+    color :gray;
+    margin:7px;
 }
 .clickable:hover{
     color:aqua;
@@ -106,7 +108,6 @@ font-size: 30px;
     right: -15px;
 }
 .placeholder{
-    position:relative;
     font-size: 20px;
     line-height: 20p;
     padding: 10px;
@@ -125,6 +126,9 @@ padding-right: 30px;
 border-radius: 20px;
 border-width: 0px;
 background: yellow;
+float:right;
+position: relative;
+top:-43px;
 }
 .subscribe:hover{
     cursor: pointer;
@@ -139,5 +143,11 @@ background: yellow;
     font-size: 30px;
     margin-bottom: 30px;
 }
-
+.greytext{
+    color:grey;
+    margin-bottom: 20px;
+}
+.emailsub{
+    display:inline;
+}
 /*  footer ends here */

@@ -136,6 +136,9 @@ top:-43px;
 .socialLinks{
     margin-top:10px;
 }
+.socialLinks:hover{
+    cursor: pointer;
+}
 .socialimg{
     margin:7px;
 }
@@ -148,6 +151,8 @@ top:-43px;
     margin-bottom: 20px;
 }
 .emailsub{
-    display:inline;
+    display:inline-block;
+    max-width: 400px;
 }
+
 /*  footer ends here */

@@ -11,6 +11,57 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header starts here */
+.header-container {
+    padding-top: 0px;
+}
+
+.header-container .logo {
+    float:left;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.header-container .navigation{
+    float: right;
+}
+.header-container .hamburger {
+   
+}
+.header-container .dropdown {
+    padding: 20px 8px;
+    font-weight: 500;
+    font-size: 19px;
+    text-decoration: none;
+    color: #5c6b56;
+    background-color: transparent;
+    border: none;
+}
+@media (min-width: 1199px) {
+    .dropdown {
+        padding: 20px 20px;
+    }
+}
+
+.header-container .dropdown:hover {
+    color: var(--primary-color);
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+
+.header-container .dropdown:first-of-type.active {
+    color: var(--primary-color);
+}
+
+.header-container .login {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #5c6b56;
+    display: inline-block;
+    padding: 0px 20px 10px;
+    border-bottom: var(--secondary-color) solid 1px;
+    margin-top: 17px;
+}
 /* header ends here */
 
 /* scroll up button starts here */

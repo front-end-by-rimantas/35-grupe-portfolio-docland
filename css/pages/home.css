@@ -17,6 +17,37 @@
 /* scroll up button ends here */
 
 /*  hero starts here */
+.right-column {
+    position: relative;
+    
+}
+.right-column .pic-under {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    object-fit: fit-content;
+    top: -60px;
+    left: -70px;
+}
+
+.right-column .pic-under2 {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    object-fit: fit-content;
+    right: -1px;
+    bottom: -60px;
+}
+
+.right-column > .hero-video {
+    position: relative;
+    
+}
+
+.right-column > .hero-video > .upper-pic{
+    width: 100%;
+    height:fit-content;
+}
 /*  hero ends here */
 
 /*  key facts starts here */
@@ -26,6 +57,56 @@
 /*  countdown ends here */
 
 /*  course slide starts here */
+.buttonai{
+    float: right;
+position: relative;
+right:30px
+}
+
+.buttonai > .btnKaire{
+width: 50px;
+height: 50px;
+color: white;
+background: aqua;
+margin-right: 20px;
+border:none;
+font-size: 30px;
+}
+.buttonai > .btnDesine{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: aqua;
+    border:none;
+    font-size: 30px
+}
+.hedercarusel{
+    font-size: 40px;
+}
+.caruimg{
+    height: 350px;
+    width : 250px;
+    padding: 40px;
+    padding-bottom: 25px;
+    filter: invert(100%);
+}
+.textUnder{
+    display: block;
+   color:white;
+   font-size: 25px;
+}
+.maxheight{
+    max-height: 400px;
+}
+.carusel{
+    text-align: center;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 12.5px;
+    float :left;
+    border-radius: 20px;
+    
+}
 /*  course slide ends here */
 
 /*  course syllabus starts here */
@@ -47,4 +128,62 @@
 /*  instructors ends here */
 
 /*  footer starts here */
+.clickable{
+    list-style-type: none;
+    color :gray;
+    margin:7px;
+}
+.clickable:hover{
+    color:aqua;
+    position: relative; 
+    right: -15px;
+}
+.placeholder{
+    font-size: 20px;
+    line-height: 20p;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 0px;
+    border-radius: 20px;
+    border-width: 0px;
+    background: blue;
+}
+.subscribe{
+font-size: 20px;
+line-height: 20p;
+padding: 10px;
+padding-left: 30px;
+padding-right: 30px;
+border-radius: 20px;
+border-width: 0px;
+background: yellow;
+float:right;
+position: relative;
+top:-43px;
+}
+.subscribe:hover{
+    cursor: pointer;
+}
+.socialLinks{
+    margin-top:10px;
+}
+.socialLinks:hover{
+    cursor: pointer;
+}
+.socialimg{
+    margin:7px;
+}
+.footerh2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.greytext{
+    color:grey;
+    margin-bottom: 20px;
+}
+.emailsub{
+    display:inline-block;
+    max-width: 400px;
+}
+
 /*  footer ends here */

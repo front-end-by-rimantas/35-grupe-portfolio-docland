@@ -12,7 +12,28 @@
     {
       "name": "Rimantas",
       "url": "https://github.com/belauzas"
+    }, 
+    {
+      "name": "Diana O.",
+      "url": "https://github.com/Nuotaikos"
+    },
+    {
+      "name": "Egle N.",
+      "url": "https://github.com/EgleNem"
+    },
+    {
+      "name": "Rugile",
+      "url": "https://github.com/kauste"
+    },
+    {
+      "name": "Lukas T.",
+      "url": "https://github.com/lukastabu"
+    },
+    {
+      "name": "Laurynas D.",
+      "url": "https://github.com/laurisdid"
     }
+
   ],
   "license": "MIT",
   "devDependencies": {

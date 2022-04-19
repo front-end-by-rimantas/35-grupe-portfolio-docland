@@ -88,7 +88,7 @@ font-size: 30px;
     width : 250px;
     padding: 40px;
     padding-bottom: 25px;
-    filter: invert(100%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    filter: invert(100%);
 }
 .textUnder{
     display: block;
@@ -128,4 +128,62 @@ font-size: 30px;
 /*  instructors ends here */
 
 /*  footer starts here */
+.clickable{
+    list-style-type: none;
+    color :gray;
+    margin:7px;
+}
+.clickable:hover{
+    color:aqua;
+    position: relative; 
+    right: -15px;
+}
+.placeholder{
+    font-size: 20px;
+    line-height: 20p;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 0px;
+    border-radius: 20px;
+    border-width: 0px;
+    background: blue;
+}
+.subscribe{
+font-size: 20px;
+line-height: 20p;
+padding: 10px;
+padding-left: 30px;
+padding-right: 30px;
+border-radius: 20px;
+border-width: 0px;
+background: yellow;
+float:right;
+position: relative;
+top:-43px;
+}
+.subscribe:hover{
+    cursor: pointer;
+}
+.socialLinks{
+    margin-top:10px;
+}
+.socialLinks:hover{
+    cursor: pointer;
+}
+.socialimg{
+    margin:7px;
+}
+.footerh2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.greytext{
+    color:grey;
+    margin-bottom: 20px;
+}
+.emailsub{
+    display:inline-block;
+    max-width: 400px;
+}
+
 /*  footer ends here */

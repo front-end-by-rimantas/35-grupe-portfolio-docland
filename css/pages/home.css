@@ -17,6 +17,37 @@
 /* scroll up button ends here */
 
 /*  hero starts here */
+.right-column {
+    position: relative;
+    
+}
+.right-column .pic-under {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    object-fit: fit-content;
+    top: -60px;
+    left: -70px;
+}
+
+.right-column .pic-under2 {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    object-fit: fit-content;
+    right: -1px;
+    bottom: -60px;
+}
+
+.right-column > .hero-video {
+    position: relative;
+    
+}
+
+.right-column > .hero-video > .upper-pic{
+    width: 100%;
+    height:fit-content;
+}
 /*  hero ends here */
 
 /*  key facts starts here */

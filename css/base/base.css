@@ -16,3 +16,15 @@ body {
     display: inline-block;
     font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
+/* colors classes start */
+.bg-background-color {
+    background-color: var(--background-color);
+}
+/* colors classes ends */
+
+/* title section starts */
+/* title section ends*/
+
+/* desctiption starts */
+/* desctiption ends */

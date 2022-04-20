@@ -80,3 +80,12 @@ body {
     color: #fff;
 }
 /* desctiption ends */
+
+
+
+
+
+
+.shadow {
+    box-shadow: 0 8px 16px rgb(0 0 0 / 6%);
+}

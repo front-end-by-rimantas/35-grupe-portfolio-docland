@@ -58,10 +58,6 @@
     cursor: pointer;
 }
 
-.header-container .dropdown:first-of-type.active {
-    color: var(--primary-color);
-}
-
 .header-container .login {
     font-size: 18px;
     font-weight: 500;

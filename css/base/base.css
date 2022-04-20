@@ -69,6 +69,7 @@ body {
 .section-description {
     font-size: 20px;
     font-weight: 300;
+    line-height: 1.6em;
     color: var(--description-color);
 }
 .text-pricing {
@@ -80,3 +81,12 @@ body {
     color: var(--primary-color-anti);
 }
 /* desctiption ends */
+
+
+
+
+
+
+.shadow {
+    box-shadow: 0 8px 16px #0002;
+}

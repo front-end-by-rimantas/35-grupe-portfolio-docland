@@ -235,6 +235,15 @@ font-size: 30px;
 .syllabus-callendar {
     width: 20%;
     float: left;
+    margin-top: 30px;
+}
+.syllabus-callendar-icon {
+    font-size: 35px;
+    width: 100%;
+    height: fit-content;
+    margin-left: 19%;
+    margin-bottom: 10px;
+    color: var( --secondary-color);
 }
 .syllabus-up-right {
     width: 80%;

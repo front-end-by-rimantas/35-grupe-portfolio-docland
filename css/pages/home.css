@@ -153,10 +153,24 @@
 /*  key facts ends here */
 
 /*  countdown starts here */
+
 .countdown {
     padding: 20px;
     text-align: center;
     border-radius: 20px;
+    padding: 60px 50px;
+}
+.countdown-badge {
+    color: var(--primary-color);
+    background-color: #C9FFF5;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+.time-element {
+    width: 24%;
+    height: 80px;
+    display: inline-block;
+    margin-top: 20px;
 }
 /*  countdown ends here */
 

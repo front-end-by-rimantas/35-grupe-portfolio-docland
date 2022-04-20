@@ -47,7 +47,9 @@
     transition-duration: 0.7s;
     cursor: pointer;
 }
-
+.header-container .hamburger:hover {
+    color: var(--description-color);
+}
 .header-container .dropdown:first-of-type.active {
     color: var(--primary-color);
 }
@@ -58,9 +60,9 @@
     text-decoration: none;
     color: var(--description-color);
     display: inline-block;
-    padding: 0px 20px 10px;
+    padding-bottom: 10px;
     border-bottom: var(--secondary-color) solid 1px;
-    margin-top: 17px;
+    margin: 17px 20px 0px 20px;
 }
 /* header ends here */
 

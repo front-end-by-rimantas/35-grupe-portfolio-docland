@@ -55,7 +55,7 @@
  }
 
 .header-container .hamburger:hover {
-    color: var(--description-color);
+    cursor: pointer;
 }
 
 .header-container .dropdown:first-of-type.active {

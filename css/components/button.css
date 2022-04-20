@@ -56,3 +56,14 @@
 .btn.btn-arrow:hover {
     color: var(--secondary-color);
 }
+.btn.btn-play {
+    background-color: var(--secondary-color);
+    color: var(--primary-color-anti);
+    border-radius: 50%;
+    padding: 1.3em 1.5em; ;
+
+}
+.btn.btn-play:hover {
+    background-color: var(--primary-color);
+}
+

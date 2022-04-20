@@ -77,6 +77,6 @@ body {
     color: var(--description-color);
 }
 .text-white {
-    color: #fff;
+    color: var(--primary-color-anti);
 }
 /* desctiption ends */

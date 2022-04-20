@@ -79,11 +79,11 @@ body {
 }
 /* desctiption ends */
 
-
-
-
-
+.center {
+    text-align: center;
 
 .shadow {
     box-shadow: 0 8px 16px #0002;
+    border-radius: 20px;
+
 }

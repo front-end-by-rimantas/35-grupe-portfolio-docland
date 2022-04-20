@@ -218,17 +218,44 @@ font-size: 30px;
 /*  course syllabus ends here */
 
 /*  course benefits starts here */
+.syllabus-row {
+    padding: 60px 80px 60px 60px;
+    background-color: #fff;
+    position: relative;
+}
+.syllabus-angle {
+    font-size: 35px;
+    position: absolute;
+    right: 100px
+}
 .syllabus-upper-part {
     width: 100%;
     display: inline-block;
 }
 .syllabus-callendar {
-    width: 17%;
+    width: 20%;
     float: left;
 }
 .syllabus-up-right {
-    width: 83%;
+    width: 80%;
     float: left;
+}
+.syllabus-up-right::after {
+    content: '';
+    display:inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(239, 237, 237);
+}
+.syllabus-title{
+    margin-bottom: 20px;
+}
+.syllabus-amount-of-time {
+    margin: 20px 0 30px;
+}
+.syllabus-list {
+    width:80%;
+    margin-left: 20%;
 }
 /*  course benefits ends here */
 

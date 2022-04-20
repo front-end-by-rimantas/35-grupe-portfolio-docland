@@ -111,6 +111,11 @@
 /*  key facts ends here */
 
 /*  countdown starts here */
+.countdown {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
 /*  countdown ends here */
 
 /*  course slide starts here */

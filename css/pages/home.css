@@ -74,23 +74,59 @@
 /* scroll up button ends here */
 
 /*  hero starts here */
+
+.left-column > .hero-star-rating {
+    font-size: 20px;
+    color: #707070;
+}
+.fa-star, .fa-star-half-o{
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+.left-column > .person {
+    font-size: 20px;
+    color: #707070;
+    float: left;
+    width: 100%;
+    margin: 12px 0;
+}
+.left-column > .person > .green {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.left-column .hero-btn-link {
+    width: 80%;
+    margin-top: 40px;
+}
+
+.hero-btn-enroll {
+    margin-right: 20px;
+}
+.hero-link {
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 0.5em 0 0 10px;
+}
 .right-column {
     position: relative;
-    
+    margin-top: 70px;
 }
 .right-column .pic-under {
     position: absolute;
     z-index: -1;
-    width: 70%;
+    max-width: 100%;
     object-fit: fit-content;
     top: -60px;
     left: -70px;
 }
-
 .right-column .pic-under2 {
     position: absolute;
     z-index: -1;
-    width: 70%;
+    max-width: 100%;
     object-fit: fit-content;
     right: -1px;
     bottom: -60px;
@@ -98,12 +134,18 @@
 
 .right-column > .hero-video {
     position: relative;
-    
 }
 
 .right-column > .hero-video > .upper-pic{
     width: 100%;
     height:fit-content;
+}
+
+.right-column > .hero-video > .hero-btn-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 /*  hero ends here */
 

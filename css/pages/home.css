@@ -265,7 +265,10 @@ font-size: 30px;
 .syllabus-list {
     width:80%;
     display:inline-block;
-    margin-left: 20%;
+    margin: 10px 0 0 20%;
+}
+.syllabus-list > .syllabus-list-line {
+    margin-top: 30px;
 }
 .syllabus-list > li > i.fa-play-circle-o {
     width: 8%;
@@ -279,9 +282,10 @@ font-size: 30px;
     width: 15%;
     float: left;
 }
-.syllabus-list > li > i {
+.syllabus-list > li > i{
     width: 15%;
     float:left;
+    text-align:center;
 
 }
 /*  course benefits ends here */

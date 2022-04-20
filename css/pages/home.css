@@ -24,11 +24,13 @@
 .header-container .navigation{
     float: right;
 }
+
 .header-container .hamburger {
    
 }
+
 .header-container .dropdown {
-    padding: 20px 8px;
+    padding: 20px 20px;
     font-weight: 500;
     font-size: 19px;
     text-decoration: none;
@@ -36,20 +38,17 @@
     background-color: transparent;
     border: none;
 }
-@media (min-width: 1199px) {
-    .dropdown {
-        padding: 20px 20px;
-    }
-}
 
 .header-container .dropdown:hover {
     color: var(--primary-color);
     transition-duration: 0.7s;
     cursor: pointer;
 }
+
 .header-container .hamburger:hover {
     color: var(--description-color);
 }
+
 .header-container .dropdown:first-of-type.active {
     color: var(--primary-color);
 }

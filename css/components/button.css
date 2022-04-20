@@ -1,0 +1,76 @@
+.btn {
+    display: inline-block;
+    padding: 0.8em 1.7em;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--primary-color-anti);;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.5s;
+    
+}
+.btn:hover {
+    background-color: var(--secondary-color);
+    
+}
+
+.btn.btn-yellow {
+    background-color: var(--secondary-color);
+    
+}
+.btn.btn-yellow:hover {
+    background-color: var(--primary-color);
+
+}
+.btn.btn-white {
+    background-color: var(--primary-color-anti);
+    color: var(--primary-color);
+    
+}
+.btn.btn-white:hover {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-anti);
+
+}
+
+.btn.btn-transparent {
+    background-color: transparent;
+    color: black;
+    border: 1px solid var(--primary-color);
+    
+}
+.btn.btn-transparent:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-color-anti);
+
+}
+.btn.btn-arrow {
+    background-color: transparent;
+    color: var(--primary-color-anti);
+    padding: 0;
+
+}
+.btn.btn-arrow:hover {
+    color: var(--secondary-color);
+}
+.btn.btn-play {
+    background-color: var(--secondary-color);
+    color: var(--primary-color-anti);
+    border-radius: 50%;
+    padding: 1.3em 1.5em; ;
+
+}
+.btn.btn-play:hover {
+    background-color: var(--primary-color);
+}
+.btn.btn-sub {
+    font-weight: bold;
+    }
+
+.btn.btn-sub:hover{
+color: black;
+font-weight: bold;
+}

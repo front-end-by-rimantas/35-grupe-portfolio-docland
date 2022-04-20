@@ -3,7 +3,7 @@
 @import '../base/layout.css';
 
 /* 3rd-party */
-
+@import '../3rd-party/font-awesome.min.css';
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
@@ -203,7 +203,7 @@ font-size: 30px;
     padding-right: 0px;
     border-radius: 20px;
     border-width: 0px;
-    background: blue;
+    background: var(--primary-color);
 }
 .subscribe{
 font-size: 20px;
@@ -213,7 +213,7 @@ padding-left: 30px;
 padding-right: 30px;
 border-radius: 20px;
 border-width: 0px;
-background: yellow;
+background: var(--secondary-color);
 float:right;
 position: relative;
 top:-43px;

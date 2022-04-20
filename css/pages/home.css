@@ -25,9 +25,6 @@
     float: right;
 }
 
-.header-container .hamburger {
-   
-}
 
 .header-container .dropdown {
     padding: 20px 28px;
@@ -49,6 +46,13 @@
     transition-duration: 0.7s;
     cursor: pointer;
 }
+
+.hamburger {
+    font-size: 35px;
+    padding: 12px 5px;
+    font-weight: 100;
+    color: var(--description-color);
+ }
 
 .header-container .hamburger:hover {
     color: var(--description-color);

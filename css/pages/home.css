@@ -214,9 +214,22 @@ font-size: 30px;
 /*  course slide ends here */
 
 /*  course syllabus starts here */
+
 /*  course syllabus ends here */
 
 /*  course benefits starts here */
+.syllabus-upper-part {
+    width: 100%;
+    display: inline-block;
+}
+.syllabus-callendar {
+    width: 17%;
+    float: left;
+}
+.syllabus-up-right {
+    width: 83%;
+    float: left;
+}
 /*  course benefits ends here */
 
 /*  pricing starts here */

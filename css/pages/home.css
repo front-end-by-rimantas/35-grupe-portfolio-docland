@@ -224,7 +224,7 @@ font-size: 30px;
     position: relative;
 }
 .syllabus-angle {
-    font-size: 35px;
+    font-size: 30px;
     position: absolute;
     right: 100px
 }
@@ -262,6 +262,12 @@ font-size: 30px;
 .syllabus-amount-of-time {
     margin: 20px 0 30px;
 }
+.syllabus-up-right > .syllabus-amount-of-time span {
+    float: left; 
+    width: fit-content;
+    margin-right: 40px;
+}
+
 .syllabus-list {
     width:80%;
     display:inline-block;
@@ -273,6 +279,8 @@ font-size: 30px;
 .syllabus-list > li > i.fa-play-circle-o {
     width: 8%;
     float:left;
+    font-size: 25px;
+    color: var( --primary-color);
 }
 .syllabus-list > li > p{
     width: 62%;
@@ -286,7 +294,14 @@ font-size: 30px;
     width: 15%;
     float:left;
     text-align:center;
+    font-size: 22px;
+}
 
+.syllabus-list > li:first-child > i:last-child{
+    font-size:18px;
+    color: var(--primary-color);
+    font-style: inherit;
+    font-weight: 600;
 }
 /*  course benefits ends here */
 

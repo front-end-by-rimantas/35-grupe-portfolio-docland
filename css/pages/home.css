@@ -264,7 +264,25 @@ font-size: 30px;
 }
 .syllabus-list {
     width:80%;
+    display:inline-block;
     margin-left: 20%;
+}
+.syllabus-list > li > i.fa-play-circle-o {
+    width: 8%;
+    float:left;
+}
+.syllabus-list > li > p{
+    width: 62%;
+    float:left;
+}
+.syllabus-list > li > time{
+    width: 15%;
+    float: left;
+}
+.syllabus-list > li > i {
+    width: 15%;
+    float:left;
+
 }
 /*  course benefits ends here */
 

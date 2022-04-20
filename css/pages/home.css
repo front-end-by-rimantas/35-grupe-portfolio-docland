@@ -1,72 +1,71 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3rd-party */
-@import '../3rd-party/font-awesome.min.css';
+@import "../3rd-party/font-awesome.min.css";
 /* components */
-@import '../components/button.css';
-@import '../components/form.css';
+@import "../components/button.css";
+@import "../components/form.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header starts here */
 .header-container {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .header-container .logo {
-    float:left;
-    padding: 20px 10px;
-    margin: 0;
+  float: left;
+  padding: 20px 10px;
+  margin: 0;
 }
 
-.header-container .navigation{
-    float: right;
+.header-container .navigation {
+  float: right;
 }
-
 
 .header-container .dropdown {
-    padding: 20px 28px;
-    font-weight: 500;
-    font-size: 19px;
-    text-decoration: none;
-    color: var(--description-color);
-    background-color: transparent;
-    border: none;
+  padding: 20px 28px;
+  font-weight: 500;
+  font-size: 19px;
+  text-decoration: none;
+  color: var(--description-color);
+  background-color: transparent;
+  border: none;
 }
 @media (max-width: 1199px) {
-    .header-container .dropdown {
-        padding: 20px 8px;
-    }
+  .header-container .dropdown {
+    padding: 20px 8px;
+  }
 }
 
 .header-container .dropdown:hover {
-    color: var(--primary-color);
-    transition-duration: 0.7s;
-    cursor: pointer;
+  color: var(--primary-color);
+  transition-duration: 0.7s;
+  cursor: pointer;
 }
 
 .hamburger {
-    font-size: 35px;
-    padding: 12px 5px;
-    font-weight: 100;
-    color: var(--description-color);
- }
+  font-size: 35px;
+  padding: 12px 5px;
+  font-weight: 100;
+  color: var(--description-color);
+}
 
 .header-container .hamburger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .header-container .login {
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--description-color);
-    display: inline-block;
-    padding-bottom: 10px;
-    border-bottom: var(--secondary-color) solid 1px;
-    margin: 17px 20px 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--description-color);
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: var(--secondary-color) solid 1px;
+  margin: 17px 20px 0px 20px;
 }
 /* header ends here */
 
@@ -75,35 +74,33 @@
 
 /*  hero starts here */
 .right-column {
-    position: relative;
-    
+  position: relative;
 }
 .right-column .pic-under {
-    position: absolute;
-    z-index: -1;
-    width: 70%;
-    object-fit: fit-content;
-    top: -60px;
-    left: -70px;
+  position: absolute;
+  z-index: -1;
+  width: 70%;
+  object-fit: fit-content;
+  top: -60px;
+  left: -70px;
 }
 
 .right-column .pic-under2 {
-    position: absolute;
-    z-index: -1;
-    width: 70%;
-    object-fit: fit-content;
-    right: -1px;
-    bottom: -60px;
+  position: absolute;
+  z-index: -1;
+  width: 70%;
+  object-fit: fit-content;
+  right: -1px;
+  bottom: -60px;
 }
 
 .right-column > .hero-video {
-    position: relative;
-    
+  position: relative;
 }
 
-.right-column > .hero-video > .upper-pic{
-    width: 100%;
-    height:fit-content;
+.right-column > .hero-video > .upper-pic {
+  width: 100%;
+  height: fit-content;
 }
 /*  hero ends here */
 
@@ -112,62 +109,61 @@
 
 /*  countdown starts here */
 .countdown {
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
 }
 /*  countdown ends here */
 
 /*  course slide starts here */
-.buttonai{
-    float: right;
-position: relative;
-right:30px
+.buttonai {
+  float: right;
+  position: relative;
+  right: 30px;
 }
 
-.buttonai > .btnKaire{
-width: 50px;
-height: 50px;
-color: white;
-background: aqua;
-margin-right: 20px;
-border:none;
-font-size: 30px;
+.buttonai > .btnKaire {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: aqua;
+  margin-right: 20px;
+  border: none;
+  font-size: 30px;
 }
-.buttonai > .btnDesine{
-    width: 50px;
-    height: 50px;
-    color: white;
-    background: aqua;
-    border:none;
-    font-size: 30px
+.buttonai > .btnDesine {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: aqua;
+  border: none;
+  font-size: 30px;
 }
-.hedercarusel{
-    font-size: 40px;
+.hedercarusel {
+  font-size: 40px;
 }
-.caruimg{
-    height: 350px;
-    width : 250px;
-    padding: 40px;
-    padding-bottom: 25px;
-    filter: invert(100%);
+.caruimg {
+  height: 350px;
+  width: 250px;
+  padding: 40px;
+  padding-bottom: 25px;
+  filter: invert(100%);
 }
-.textUnder{
-    display: block;
-   color:white;
-   font-size: 25px;
+.textUnder {
+  display: block;
+  color: white;
+  font-size: 25px;
 }
-.maxheight{
-    max-height: 400px;
+.maxheight {
+  max-height: 400px;
 }
-.carusel{
-    text-align: center;
-    height: 400px;
-    background-color: blueviolet;
-    margin: 12.5px;
-    float :left;
-    border-radius: 20px;
-    
+.carusel {
+  text-align: center;
+  height: 400px;
+  background-color: blueviolet;
+  margin: 12.5px;
+  float: left;
+  border-radius: 20px;
 }
 /*  course slide ends here */
 
@@ -178,6 +174,83 @@ font-size: 30px;
 /*  course benefits ends here */
 
 /*  pricing starts here */
+.price-box1 {
+  background-color: var(--primary-color-anti);
+  padding: 30px 40px;
+  border-radius: 10%;
+}
+.priceboxHeader1 {
+  display: inline-block;
+}
+.price1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.month {
+  font-size: 18px;
+  color: #707070;
+}
+.text1 {
+  padding: 20px 0;
+}
+
+.price-box2 {
+  background-color: var(--primary-color);
+  padding: 30px 40px;
+  border-radius: 10%;
+  width: 40%;
+  display: inline-block;
+}
+.priceBoxHeader2 {
+  display: inline-block;
+  width: 100%;
+}
+.price2 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--primary-color-anti);
+  width: 40%;
+  float: left;
+}
+.discountPrice {
+  width: 40%;
+  display: inline-block;
+  margin-top: 12px;
+}
+.price3 {
+  color: #cbfff5;
+  text-decoration: line-through;
+  font-size: 24px;
+  display: block;
+  font-weight: 700;
+}
+.year {
+  font-size: 18px;
+  color: var(--primary-color-anti);
+  display: block;
+}
+.text2 {
+  padding: 20px 0;
+}
+.text-pricing {
+  line-height: 30px;
+  padding: 0 0 20px;
+  list-style: none;
+}
+.price-box1 > ul li::before {
+  content: "✓";
+  padding: 0 8px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+.price-box2 > ul li::before {
+    content: "✓";
+    padding: 0 8px;
+    color: var(--primary-color-anti);
+    font-weight: 900;
+  }
+
 /*  pricing ends here */
 
 /*  reviews starts here */
@@ -190,62 +263,62 @@ font-size: 30px;
 /*  instructors ends here */
 
 /*  footer starts here */
-.clickable{
-    list-style-type: none;
-    color :gray;
-    margin:7px;
+.clickable {
+  list-style-type: none;
+  color: gray;
+  margin: 7px;
 }
-.clickable:hover{
-    color:aqua;
-    position: relative; 
-    right: -15px;
+.clickable:hover {
+  color: aqua;
+  position: relative;
+  right: -15px;
 }
-.placeholder{
-    font-size: 20px;
-    line-height: 20p;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 0px;
-    border-radius: 20px;
-    border-width: 0px;
-    background: var(--primary-color);
+.placeholder {
+  font-size: 20px;
+  line-height: 20p;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 0px;
+  border-radius: 20px;
+  border-width: 0px;
+  background: var(--primary-color);
 }
-.subscribe{
-font-size: 20px;
-line-height: 20p;
-padding: 10px;
-padding-left: 30px;
-padding-right: 30px;
-border-radius: 20px;
-border-width: 0px;
-background: var(--secondary-color);
-float:right;
-position: relative;
-top:-43px;
+.subscribe {
+  font-size: 20px;
+  line-height: 20p;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  border-width: 0px;
+  background: var(--secondary-color);
+  float: right;
+  position: relative;
+  top: -43px;
 }
-.subscribe:hover{
-    cursor: pointer;
+.subscribe:hover {
+  cursor: pointer;
 }
-.socialLinks{
-    margin-top:10px;
+.socialLinks {
+  margin-top: 10px;
 }
-.socialLinks:hover{
-    cursor: pointer;
+.socialLinks:hover {
+  cursor: pointer;
 }
-.socialimg{
-    margin:7px;
+.socialimg {
+  margin: 7px;
 }
-.footerh2{
-    font-size: 30px;
-    margin-bottom: 30px;
+.footerh2 {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
-.greytext{
-    color:grey;
-    margin-bottom: 20px;
+.greytext {
+  color: grey;
+  margin-bottom: 20px;
 }
-.emailsub{
-    display:inline-block;
-    max-width: 400px;
+.emailsub {
+  display: inline-block;
+  max-width: 400px;
 }
 
 /*  footer ends here */

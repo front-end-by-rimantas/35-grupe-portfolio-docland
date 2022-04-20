@@ -66,4 +66,11 @@
 .btn.btn-play:hover {
     background-color: var(--primary-color);
 }
+.btn.btn-sub {
+    font-weight: bold;
+    }
 
+.btn.btn-sub:hover{
+color: black;
+font-weight: bold;
+}

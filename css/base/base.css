@@ -32,13 +32,13 @@ body {
 /* title section starts */
 .section-title-h1 {
     font-size: 60px;
-    font-weight: 600;
-    line-height: 1.17;
+    font-weight: 500;
+    line-height: 1.2em;
     color: var(--title-color);
 }
 .section-title-h2 {
     font-size: 40px;
-    line-height: 1.35;
+    line-height: 1.35em;
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: capitalize;
@@ -53,28 +53,18 @@ body {
 /* title section ends*/
 
 /* desctiption starts */
-.stars {
-    font-size: 20px;
-    color: #707070;
-}
-.person {
-    font-size: 20px;
-    color: #707070;
-}
-.person-green {
-    color: var(--primary-color);
-    font-size: 20px;
-    font-weight: 600;
-}
+
 .section-description {
     font-size: 20px;
     font-weight: 300;
     color: var(--description-color);
+    line-height: 1.6em;
 }
 .text-pricing {
     font-size: 16px;
     font-weight: 400;
     color: var(--description-color);
+    line-height: 1.6em;
 }
 .text-white {
     color: var(--primary-color-anti);

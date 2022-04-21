@@ -74,3 +74,25 @@
 color: black;
 font-weight: bold;
 }
+
+#backToTopBtn {
+    display: none;
+    position: fixed; 
+    width: 30px;
+    height: 30px;
+    bottom: 100px; 
+    right: 85px; 
+    z-index: 99;
+    border: none;
+    outline: none; 
+    background-color: var(--secondary-color) ;
+    color: var(--secondary-color-anti);
+    cursor: pointer;
+    border-radius: 15px; 
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: rgb(229, 238, 101); 
+  }

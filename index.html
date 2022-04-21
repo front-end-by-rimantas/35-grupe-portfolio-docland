@@ -14,7 +14,6 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700%7cUbuntu:300,300i,400,400i,500,500i,700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--IKONOS HERO SEKCIJAI-->
     <link rel="stylesheet" href="./css/pages/home.css">
     <!-- analytics -->
   </head>
@@ -22,19 +21,22 @@
   <body>
     <!-- 3rd-party: FB -->
     <!-- header starts here -->
-    <header class="container">
+    <header class="container header-container">
         <div class="row">
             <div class="col-12">
-                <img src="#" alt="Logo" class="logo">
-                <nav class="hidden visible-md">
-                    <a href="#">Home</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Career</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Login</a>
-                    <a href="#">Join Now</a>
+                <img src="./img/header/crs-logo.png" alt="Logo" class="logo">
+                <nav class="navigation">
+                    <i class="fa fa-bars hamburger hidden-lg"></i>
+                    <div class="hidden visible-lg">
+                        <button class="dropdown active" href="#">Home</button>
+                        <button class="dropdown" href="#">Pricing</button>
+                        <button class="dropdown" href="#">Career</button>
+                        <button class="dropdown" href="#">Pages</button>
+                        <button class="dropdown" href="#">Blog</button>
+                        <button class="dropdown" href="#">Contact</button>
+                        <a class="login" href="#">Login</a>
+                        <a class="btn" href="#">Join Now</a>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -47,20 +49,25 @@
     <!--  hero starts here -->
     <section class="container">
         <div class="row">
-            <div class="col-12 col-md-10  col-lg-5">
+            <div class="left-column col-12 col-md-10 col-lg-5">
                 <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <span>(2.3 k)</span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star-half-o"></span>
+                    <span class="hero-star-rating">(2.3 k)</span>
                 </div>
-                <h1>Learn UX Design</h1>
-                <p>With Don Norman</p>
-                <p>Design High-Impact User Experiences. Research, Design, and Prototype effective, visually-driven websites and apps.</p>
-                <a class="btn" href="#">Enroll now</a>
-                <a href="#" >Financial Aid Available</a>
+
+                <h1 class="section-title-h1">Learn UX Design</h1>
+                <span class="person">With
+                    <span class="green">Don Norman</span> 
+                </span>
+                <p class="section-description">Design High-Impact User Experiences. Research, Design, and Prototype effective, visually-driven websites and apps.</p>
+                <div class="hero-btn-link">
+                    <a class="btn btn-yellow hero-" href="#">Enroll now</a>
+                    <a class="hero-link" href="#" >Financial Aid Available</a>
+                </div>  
             </div>
             <div class="col-12 col-md-10  col-lg-6 ml-lg-1 ">
                 <div class="right-column">
@@ -68,7 +75,7 @@
                     <img class="pic-under2 hidden visible-lg" src="./img/hero/cbab.png" alt="picture with padding and border">
                     <div class="hero-video">
                         <img class="upper-pic" src="./img/hero/course-b.png" alt="circle">
-                        <a class="fa fa-play" href="">
+                        <a class="fa fa-play btn btn-play hero-btn-play" href="">
                         </a>
                     </div>
                 </div>
@@ -79,30 +86,30 @@
     <!--  hero ends here -->
 
     <!--  key facts starts here -->
-<section class="container">
+<section class="container center">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
             <div class="key-facts">
-                <h3>2125</h3>
-                <p>Enrolled Students</p>
+                <h3 class="section-title-h3">2125</h3>
+                <p class="section-description">Enrolled Students</p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
             <div class="key-facts">
-                <h3>5 Weeks</h3>
-                <p>Estimated Complete Time</p>
+                <h3 class="section-title-h3">5 Weeks</h3>
+                <p class="section-description">Estimated Complete Time</p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
             <div class="key-facts">
-                <h3>25 September</h3>
-                <p>Estimated Start Date</p>
+                <h3 class="section-title-h3">25 September</h3>
+                <p class="section-description">Estimated Start Date</p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
             <div class="key-facts">
-                <h3>English</h3>
-                <p>Language of Studies</p>
+                <h3 class="section-title-h3">English</h3>
+                <p class="section-description">Language of Studies</p>
             </div>
         </div>        
     </div>
@@ -112,26 +119,26 @@
     <!--  countdown starts here -->
     <section class="container">
         <div class="row">
-            <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3">
+            <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 bg-light countdown shadow center">
                 <div>
-                    <span>Close in</span>  
+                    <span class="countdown-badge">Close in</span>  
                 </div>
                 <div>
-                    <div>
-                        <h2>12</h2>
-                        <p> Days</p>
+                    <div class="time-element">
+                        <h2 class="section-title-h2">12</h2>
+                        <p class="section-description">Days</p>
                     </div>
-                    <div>
-                        <h2>12</h2>
-                        <p> Hours</p>
+                    <div class="time-element">
+                        <h2 class="section-title-h2">12</h2>
+                        <p class="section-description">Hours</p>
                     </div>
-                     <div>
-                        <h2>00</h2>
-                        <p> Minutes</p>
+                     <div class="time-element">
+                        <h2 class="section-title-h2">00</h2>
+                        <p class="section-description">Minutes</p>
                      </div>
-                     <div>
-                        <h2>13</h2>
-                        <p>Seconds</p>
+                     <div class="time-element">
+                        <h2 class="section-title-h2">13</h2>
+                        <p class="section-description">Seconds</p>
                      </div>
                 </div>
                
@@ -146,7 +153,7 @@
 <section class="container">
     <div class="row">
         <div class="col-10 ">
-            <h1 class="hedercarusel">What You'll Learn From This Course</h1> 
+            <h2 class="section-title-h2">What You'll Learn From This Course</h2> 
         </div>
         <div class="buttonai hidden visible-lg visible-xl">
             <button class="btnKaire">&lt</button>
@@ -156,7 +163,7 @@
     <div class="row">
         <div class="col-12">
             <div class="maxheight">
-                <div class="carusel">
+                <div class="carusel center">
                     <img class="caruimg" src="./img/caruselimg/brain.svg" alt="">
                     <span class="textUnder">Design Thinking</span>
                 </div>
@@ -170,23 +177,23 @@
     <!--  course slide ends here -->
 
     <!--  course syllabus starts here -->
-    </section>
+   
     <section class="container"> 
       <div class="row">
         <div class="col-12">
-            <h2>Course Syllabus</h2>
-            <a href="#" class="btn hidden visible-md">Download Syllabus</a>
+            <h2 class="section-title-h2">Course Syllabus</h2>
+            <a href="#" class="btn btn-transparent hidden visible-md">Download Syllabus</a>
         </div>
       </div>
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 bg-light">
             <div class="">
                 <img src="#" alt="Calendar icon">
-                <h3>Week 1</h3>
+                <h3 class="section-title-h3">Week 1</h3>
             </div>
             <div class="">
-                <h3>Introduction To UX Design</h3>
-                <p>
+                <h3 class="section-title-h3">Introduction To UX Design</h3>
+                <p class="section-description">
                   This week I will give you a brief overview of the user experience
                   process that I will teach in this course sequence. We will begin
                   by defining the term "User Experience".
@@ -199,14 +206,14 @@
             </div>
        
         </div>
-        <div class="col-12">
+        <div class="col-12 bg-light">
             <div class="">
                 <img src="#" alt="Calendar icon">
-                <h3>Week 2</h3>
+                <h3 class="section-title-h3">Week 2</h3>
             </div>
             <div class="">
-                <h3>UX Strategy & Formula</h3>
-                <p>
+                <h3 class="section-title-h3">UX Strategy & Formula</h3>
+                <p class="section-description">
                   This week I will give you a brief overview of the user experience
                   process that I will teach in this course sequence. We will begin
                   by defining the term "User Experience".
@@ -218,14 +225,14 @@
                 <span>2 videos</span>   
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 bg-light">
             <div class="">
                 <img src="#" alt="Calendar icon">
-                <h3>Week 3</h3>
+                <h3 class="section-title-h3">Week 3</h3>
             </div>
             <div class="">
-                <h3>Talking About Empathize & Define</h3>
-                <p>
+                <h3 class="section-title-h3">Talking About Empathize & Define</h3>
+                <p class="section-description">
                   This week I will give you a brief overview of the user experience
                   process that I will teach in this course sequence. We will begin
                   by defining the term "User Experience".
@@ -237,14 +244,14 @@
                 <span>2 videos</span>   
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 bg-light">
             <div class="">
                 <img src="#" alt="Calendar icon">
-                <h3>Week 4</h3>
+                <h3 class="section-title-h3">Week 4</h3>
             </div>
             <div class="">
-                <h3>Ideate, Iterate, Prototype & Test</h3>
-                <p>
+                <h3 class="section-title-h3">Ideate, Iterate, Prototype & Test</h3>
+                <p class="section-description">
                   This week I will give you a brief overview of the user experience
                   process that I will teach in this course sequence. We will begin
                   by defining the term "User Experience".
@@ -256,14 +263,14 @@
                 <span>2 videos</span>   
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 bg-light">
             <div class="">
                 <img src="#" alt="Calendar icon">
-                <h3>Week 5</h3>
+                <h3 class="section-title-h3">Week 5</h3>
             </div>
             <div class="">
-                <h3>Build Industry Related UX Portfolio</h3>
-                <p>
+                <h3 class="section-title-h3">Build Industry Related UX Portfolio</h3>
+                <p class="section-description">
                   This week I will give you a brief overview of the user experience
                   process that I will teach in this course sequence. We will begin
                   by defining the term "User Experience".
@@ -288,7 +295,7 @@
     <!--  course benefits starts here -->
     <section class="container">
         <div class="row">
-            <h2 class="col-12">Course Benefit</h2>
+            <h2 class="col-12 section-title-h2">Course Benefit</h2>
         </div>
         <div class="row">
             <div class="col-12">
@@ -303,48 +310,48 @@
     <section class="container">
       <div class="row">
         <div class="col-8 ml-2 col-md-6 ml-md-3 col-lg-6">
-          <h1>Pricing</h1>
+          <h2 class="section-title-h2 center">Pricing</h2>
         </div>
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 bg-light">
             <div class="price-box1">
               <div>
-                <span>$175 </span> <span>Monthly</span>
-                <p>
+                <span>&dollar;175 </span> <span>Monthly</span>
+                <p class="section-description">
                   Life can be unpredictable. Get maximum flexibility to learn at
                   your own pace.
                 </p>
               </div>
-              <ul>
+              <ul class="text-pricing">
                 <li>Monthly Subscription</li>
                 <li>Access only 1 item</li>
                 <li>Join with community</li>
                 <li>One to one mentorship</li>
               </ul>
-              <a href="#">Enroll Now</a>
+              <a href="#" class="btn btn-yellow">Enroll Now</a>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="price-box2">
+            <div class="price-box2 bg-primary-color">
               <div style="display: inline-block">
-                <div style="width: 40%; display: inline-block;">$870 
+                <div style="width: 40%; display: inline-block;">&dollar;870 
                 </div>
-                <div style="width: 40%;display: inline-block;">
-                  <span> $999 </span>
+                <div class="" style="width: 40%;display: inline-block;">
+                  <span> &dollar;999 </span>
                   <span>Yearly</span>
                 </div>
               </div>
-              <p>
+              <p class="section-description text-white">
                 Paid yearly and get 15% discount. Get maximum flexibility to
                 learn at your pace.
               </p>
-              <ul>
+              <ul class="text-pricing text-white">
                 <li>Monthly Subscription</li>
                 <li>Access only 1 item</li>
                 <li>Join with community</li>
                 <li>One to one mentorship</li>
               </ul>
-              <a href="#">Enroll Now</a>
+              <a href="#" class="btn btn-white">Enroll Now</a>
             </div>
           </div>
         </div>
@@ -355,7 +362,7 @@
     <!--  reviews starts here -->
     <section class="container">
         <div class="row">
-            <h2 class="col-12">Student Reviews</h2>
+            <h2 class="col-12 section-title-h2">Student Reviews</h2>
         </div>
         <div class="row">
             <div class="col-12">
@@ -363,33 +370,33 @@
                 CAROUSEL SLIDER HERE (išcentruota po carusele, o ne viršuj dešinėj)
             </div>
         </div>
-        <div class="row">
+        <div class="row center">
             <div class="col-12 col-sm-6 col-md-4 ml-md-2 col-lg-3 ml-lg-3">
-                <h3>4.84/5</h3>
-                <p>Average Ratings</p>
+                <h2 class="section-title-h2" style="color: var(--secondary-color);">4.84/5</h2>
+                <p class="section-description">Average Ratings</p>
             </div>
             <div class="col-12 col-sm-6 col-md-4 ml-md-0 col-lg-3 ml-lg-0">
-                <h3>15.5k</h3>
-                <p>Student Ratings</p>
+                <h2 class="section-title-h2" style="color: var(--primary-color);">15.5k</h2>
+                <p class="section-description">Student Ratings</p>
             </div>
         </div>
-        <div class="row">
-            <a class="col-12" href="#" class="btn">View All Reviews</a>
+            <div class="row col-12 center">
+            <a class="btn" href="#">View All Reviews</a>
         </div>
     </section>
     <!--  reviews ends here -->
 
     <!--  contact form starts here -->
     <section class="container">
-        <div class="row">
-            <label class="col-12 col-xl-10 ml-xl-1" for="contact"> 
-                <h2>Become A Good Designer From Beginner To
+        <div class="row center">
+            <label class="col-12 col-xl-10 ml-xl-1 bg-primary-color" for="contact"> 
+                <h2 class="section-title-h2 text-white">Become A Good Designer From Beginner To
                     Expert Grab This Course Now.
                 </h2>
             </label>
             <div class="col-12 col-lg-10 ml-lg-1 col-xl-8 ml-xl-2">
                 <input name="contact" id="contact" placeholder="Enter your e-mail">
-                <button>button</button>   
+                <button class="btn btn-arrow">arrow icon</button>    
             </div>
         </div>
     </section>
@@ -398,52 +405,52 @@
     <!--  instructors starts here -->
     <section class="container">
         <div class="row">
-                <h2 class="col-12">Course Instructor</h2>
+                <h2 class="col-12 section-title-h2 center">Course Instructor</h2>
        </div>
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 bg-light">
                 <img src="#" alt="picture">
                 <div>
-                    <p>Sarah Taylor</p>
-                    <p>UX Consultant & Expertise</p>
+                    <h3 class="section-title-h3">Sarah Taylor</h3>
+                    <p class="section-description">UX Consultant & Expertise</p>
                     <ul>
                         <li> 
                             <i>ICON</i>
-                            <p>Top Instructor in Skillshare</p> 
+                            <p class="section-description">Top Instructor in Skillshare</p> 
                         </li>
                         <li> 
                             <i>ICON</i>
-                            <p>30K+ Students</p>
+                            <p class="section-description">30K+ Students</p>
                         </li>
                         <li> 
                             <i>ICON</i>
-                            <p>10 total courses</p>
+                            <p class="section-description">10 total courses</p>
                         </li>
                     </ul>
                 </div>
-                <p>The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
+                <p class="section-description">The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 bg-light">
                 <img src="#" alt="picture">
                 <div>
-                    <p>Sarah Taylor</p>
-                    <p>UX Consultant & Expertise</p>
+                    <h3 class="section-title-h3">Sarah Taylor</h3>
+                    <p class="section-description">UX Consultant & Expertise</p>
                     <ul>
                         <li> 
                             <i>ICON</i>
-                            <p>Top Instructor in Skillshare</p> 
+                            <p class="section-description">Top Instructor in Skillshare</p> 
                         </li>
                         <li> 
                             <i>ICON</i>
-                            <p>30K+ Students</p>
+                            <p class="section-description">30K+ Students</p>
                         </li>
                         <li> 
                             <i>ICON</i>
-                            <p>10 total courses</p>
+                            <p class="section-description">10 total courses</p>
                         </li>
                     </ul>
                 </div>
-                <p>The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
+                <p class="section-description">The course has been really helpful. I have been able to understand the fundamentals ofUI Design. The importance of wireframing, prototyping, colours and how to study other site wireframing and to implement them into my UI/UX Creative process.</p>
                 </div>
             </div>
         </div>
@@ -488,7 +495,7 @@
                 
                     <div class="emailsub">
                         <input class="placeholder" placeholder="Enter your email"></input>
-                        <button class="subscribe">Subscribe</button>
+                        <button class="subscribe btn btn-sub">Subscribe</button>
                     </div>
                 
             </div>

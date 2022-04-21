@@ -3,7 +3,7 @@
 @import '../base/layout.css';
 
 /* 3rd-party */
-
+@import '../3rd-party/font-awesome.min.css';
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
@@ -11,29 +11,122 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header starts here */
+.header-container {
+    padding-top: 0px;
+}
+
+.header-container .logo {
+    float:left;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.header-container .navigation{
+    float: right;
+}
+
+
+.header-container .dropdown {
+    padding: 20px 28px;
+    font-weight: 500;
+    font-size: 19px;
+    text-decoration: none;
+    color: var(--description-color);
+    background-color: transparent;
+    border: none;
+}
+@media (max-width: 1199px) {
+    .header-container .dropdown {
+        padding: 20px 8px;
+    }
+}
+
+.header-container .dropdown:hover {
+    color: var(--primary-color);
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+
+.hamburger {
+    font-size: 35px;
+    padding: 12px 5px;
+    font-weight: 100;
+    color: var(--description-color);
+ }
+
+.header-container .hamburger:hover {
+    cursor: pointer;
+}
+
+.header-container .login {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--description-color);
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: var(--secondary-color) solid 1px;
+    margin: 17px 20px 0px 20px;
+}
 /* header ends here */
 
 /* scroll up button starts here */
 /* scroll up button ends here */
 
 /*  hero starts here */
+
+.left-column > .hero-star-rating {
+    font-size: 20px;
+    color: #707070;
+}
+.fa-star, .fa-star-half-o{
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+.left-column > .person {
+    font-size: 20px;
+    color: #707070;
+    float: left;
+    width: 100%;
+    margin: 12px 0;
+}
+.left-column > .person > .green {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.left-column .hero-btn-link {
+    width: 80%;
+    margin-top: 40px;
+}
+
+.hero-btn-enroll {
+    margin-right: 20px;
+}
+.hero-link {
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 0.5em 0 0 10px;
+}
 .right-column {
     position: relative;
-    
+    margin-top: 70px;
 }
 .right-column .pic-under {
     position: absolute;
     z-index: -1;
-    width: 70%;
+    max-width: 100%;
     object-fit: fit-content;
     top: -60px;
     left: -70px;
 }
-
 .right-column .pic-under2 {
     position: absolute;
     z-index: -1;
-    width: 70%;
+    max-width: 100%;
     object-fit: fit-content;
     right: -1px;
     bottom: -60px;
@@ -41,12 +134,18 @@
 
 .right-column > .hero-video {
     position: relative;
-    
 }
 
 .right-column > .hero-video > .upper-pic{
     width: 100%;
     height:fit-content;
+}
+
+.right-column > .hero-video > .hero-btn-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 /*  hero ends here */
 
@@ -54,6 +153,25 @@
 /*  key facts ends here */
 
 /*  countdown starts here */
+
+.countdown {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 60px 50px;
+}
+.countdown-badge {
+    color: var(--primary-color);
+    background-color: #C9FFF5;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+.time-element {
+    width: 24%;
+    height: 80px;
+    display: inline-block;
+    margin-top: 20px;
+}
 /*  countdown ends here */
 
 /*  course slide starts here */
@@ -146,7 +264,7 @@ font-size: 30px;
     padding-right: 0px;
     border-radius: 20px;
     border-width: 0px;
-    background: blue;
+    background: var(--primary-color);
 }
 .subscribe{
 font-size: 20px;
@@ -156,7 +274,7 @@ padding-left: 30px;
 padding-right: 30px;
 border-radius: 20px;
 border-width: 0px;
-background: yellow;
+background: var(--secondary-color);
 float:right;
 position: relative;
 top:-43px;

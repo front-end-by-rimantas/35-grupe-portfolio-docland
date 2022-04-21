@@ -285,7 +285,6 @@ font-size: 30px;
     width: fit-content;
     margin-right: 40px;
 }
-
 .syllabus-list {
     width:80%;
     margin: 10px 0 0 20%;
@@ -337,7 +336,41 @@ font-size: 30px;
 /*  contact form ends here */
 
 /*  instructors starts here */
-
+.instructors-blocks {
+    
+}
+.instructor-block {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.pic-ant-list {
+    display:flex;
+    justify-content: space-between;
+}
+.instructor-pic {
+    width:40%;
+    object-fit: contain;
+}
+.about-instructor {
+    width: 46%;
+}
+.instructor-list {
+    list-style: none;
+    margin-top: 20px;
+}
+.instructor-item {
+    display:flex;
+    align-items: center;
+}
+.instructor-item i {
+    margin-right: 10px;
+}
+.instructor-item:nth-child(n + 2) > i {
+    color: var(--secondary-color);
+}
 /*  instructors ends here */
 
 /*  footer starts here */

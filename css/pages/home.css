@@ -346,20 +346,29 @@ font-size: 30px;
 .home-contact-form .home-input-btn {
     border-bottom: var(--primary-color-anti) solid 2px;
     margin-top: 30px;
+    height: 38px;
 }
+
 .home-contact-form .home-cf-input {
     background-color: transparent;
     width: calc(100% - 40px);
-    height: 40px;
+    height: 38px;
     border: none;
+    padding-bottom: 16px;
 }
 .home-cf-input::placeholder {
     color: var(--primary-color-anti);
-    font-size: 18px;
+    font-size: 16px;
+    
+}
+.home-cf-input:focus-visible {
+    outline: none;
 }
 .home-contact-form .fa-long-arrow-right {
     width: 36px;
-    height: 40px;
+    height: 38px;
+    display: inline-block;
+    padding-bottom: 16px;
     font-size: 18px;
 }
 

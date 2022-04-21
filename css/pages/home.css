@@ -349,14 +349,13 @@ font-size: 30px;
 .pic-ant-list {
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .instructor-pic {
     width:40%;
     object-fit: contain;
 }
-.about-instructor {
-    width: 46%;
-}
+
 .instructor-list {
     list-style: none;
     margin-top: 20px;

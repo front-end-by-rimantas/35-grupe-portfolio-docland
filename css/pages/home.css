@@ -232,6 +232,12 @@ font-size: 30px;
 /*  course syllabus ends here */
 
 /*  course benefits starts here */
+.syllabus-main-title {
+    float: left;
+}
+.syllabus-download {
+    float: right;
+}
 .syllabus-row {
     padding: 60px 80px 60px 60px;
     background-color: #fff;

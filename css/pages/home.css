@@ -336,9 +336,6 @@ font-size: 30px;
 /*  contact form ends here */
 
 /*  instructors starts here */
-.instructors-blocks {
-    
-}
 .instructor-block {
     padding: 40px;
     width: 100%;
@@ -369,6 +366,11 @@ font-size: 30px;
 }
 .instructor-item:nth-child(n + 2) > i {
     color: var(--secondary-color);
+}
+.instructor-item:nth-child(1) > i {
+    background: linear-gradient(177deg, rgba(52,96,155,1) 19%, rgba(251,192,6,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /*  instructors ends here */
 

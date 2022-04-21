@@ -9,12 +9,11 @@
     border-radius: 0.3em;
     cursor: pointer;
     text-transform: capitalize;
-    transition: 0.5s;
     
 }
 .btn:hover {
     background-color: var(--secondary-color);
-    
+    transition: 0.5s;
 }
 
 .btn.btn-yellow {
@@ -88,9 +87,10 @@ font-weight: bold;
     background-color: var(--secondary-color) ;
     color: var(--secondary-color-anti);
     cursor: pointer;
-    border-radius: 15px; 
-    font-size: 25px;
+    border-radius: 25px; 
+    font-size: 20px;
     text-align: center;
+    transition: 0.5s;
   }
   
   #backToTopBtn:hover {

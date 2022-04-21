@@ -295,7 +295,6 @@ font-size: 30px;
     width: fit-content;
     margin-right: 40px;
 }
-
 .syllabus-list {
     width:80%;
     margin: 10px 0 0 20%;
@@ -325,7 +324,6 @@ font-size: 30px;
     text-align:center;
     font-size: 22px;
 }
-
 .syllabus-list > li:first-child > i:last-child{
     font-size:18px;
     color: var(--primary-color);
@@ -341,6 +339,30 @@ font-size: 30px;
 /*  reviews ends here */
 
 /*  contact form starts here */
+.home-contact-form {
+    border-radius: 20px;
+    padding: 120px 80px;
+}
+.home-contact-form .home-input-btn {
+    border-bottom: var(--primary-color-anti) solid 2px;
+    margin-top: 30px;
+}
+.home-contact-form .home-cf-input {
+    background-color: transparent;
+    width: calc(100% - 40px);
+    height: 40px;
+    border: none;
+}
+.home-cf-input::placeholder {
+    color: var(--primary-color-anti);
+    font-size: 18px;
+}
+.home-contact-form .fa-long-arrow-right {
+    width: 36px;
+    height: 40px;
+    font-size: 18px;
+}
+
 /*  contact form ends here */
 
 /*  instructors starts here */

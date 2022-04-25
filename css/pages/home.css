@@ -222,8 +222,8 @@ right:30px
 .buttonai > .btnKaire{
 width: 50px;
 height: 50px;
-color: white;
-background: aqua;
+color: var(--primary-color-anti);
+background: var(--primary-color);
 margin-right: 20px;
 border:none;
 font-size: 30px;
@@ -231,8 +231,8 @@ font-size: 30px;
 .buttonai > .btnDesine{
     width: 50px;
     height: 50px;
-    color: white;
-    background: aqua;
+    color: var(--primary-color-anti);
+    background: var(--primary-color);
     border:none;
     font-size: 30px
 }
@@ -380,11 +380,11 @@ font-size: 30px;
 /*  footer starts here */
 .clickable{
     list-style-type: none;
-    color :gray;
+    color :var(--description-color);
     margin:7px;
 }
 .clickable:hover{
-    color:aqua;
+    color:var(--primary-color);
     position: relative; 
     right: -15px;
 }
@@ -397,6 +397,9 @@ font-size: 30px;
     border-radius: 20px;
     border-width: 0px;
     background: var(--primary-color);
+}
+.placeholder:focus{
+    outline: none;
 }
 .subscribe{
     font-size: 20px;
@@ -428,7 +431,7 @@ font-size: 30px;
     margin-bottom: 30px;
 }
 .greytext{
-    color:grey;
+    color:var(--description-color);
     margin-bottom: 20px;
 }
 .emailsub{

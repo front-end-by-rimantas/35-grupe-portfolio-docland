@@ -348,7 +348,7 @@ font-size: 30px;
     text-align: center;
     justify-content: center;
     margin-top: 50%;
-    transform: translateY(50%);
+    transform: translateY(-50%);
 }
 
 /*

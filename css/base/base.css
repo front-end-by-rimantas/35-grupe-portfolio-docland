@@ -57,6 +57,14 @@ body {
     text-transform: capitalize;
     color: var(--title-color);
 }
+
+.section-title-h4 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--title-color);
+}
+
 /* title section ends*/
 
 /* desctiption starts */

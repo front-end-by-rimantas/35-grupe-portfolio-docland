@@ -24,28 +24,68 @@
 .header-container .navigation {
   float: right;
 }
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
 
-.header-container .dropdown {
-  padding: 20px 28px;
-  font-weight: 500;
-  font-size: 19px;
-  text-decoration: none;
-  color: var(--description-color);
-  background-color: transparent;
-  border: none;
+.header-container .dropbtn {
+    padding: 20px 28px;
+    font-weight: 500;
+    font-size: 19px;
+    text-decoration: none;
+    color: var(--description-color);
+    background-color: transparent;
+    border: none;
 }
 @media (max-width: 1199px) {
-  .header-container .dropdown {
-    padding: 20px 8px;
-  }
+    .header-container .dropbtn {
+        padding: 20px 8px;
+    }
 }
 
-.header-container .dropdown:hover {
-  color: var(--primary-color);
-  transition-duration: 0.7s;
-  cursor: pointer;
-}
+.header-container .dropbtn:hover {
+    color: var(--primary-color);
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+    cursor: pointer;
 
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    text-decoration: none;
+    width: 260px;
+    padding: 30px;
+}
+.dropdown:hover .dropdown-content{
+    display: block; 
+}
+.dropdown-content .home-dropdown-1{
+    text-decoration: none;
+    display:block;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: var(--description-color);
+    line-height: 1.6em;
+    text-transform: capitalize;
+}
+.dropdown-content:nth-child(2) .home-dropdown-1:nth-child(8){
+    color: var(--primary-color);
+}
+.dropdown-content:hover .home-dropdown-1{
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.dropdown-content .home-dropdown-1:hover {
+    color: var(--primary-color);
+    margin-left: 8px;
+   
+}
 .hamburger {
   font-size: 35px;
   padding: 12px 5px;
@@ -151,10 +191,24 @@
 /*  key facts ends here */
 
 /*  countdown starts here */
+
 .countdown {
-  padding: 20px;
-  text-align: center;
-  border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 60px 50px;
+}
+.countdown-badge {
+    color: var(--primary-color);
+    background-color: #C9FFF5;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+.time-element {
+    width: 24%;
+    height: 80px;
+    display: inline-block;
+    margin-top: 20px;
 }
 /*  countdown ends here */
 
@@ -165,52 +219,171 @@
   right: 30px;
 }
 
-.buttonai > .btnKaire {
-  width: 50px;
-  height: 50px;
-  color: white;
-  background: aqua;
-  margin-right: 20px;
-  border: none;
-  font-size: 30px;
+.buttonai > .btnKaire{
+width: 50px;
+height: 50px;
+color: var(--primary-color-anti);
+background: var(--primary-color);
+margin-right: 20px;
+border:none;
+font-size: 30px;
 }
-.buttonai > .btnDesine {
-  width: 50px;
-  height: 50px;
-  color: white;
-  background: aqua;
-  border: none;
-  font-size: 30px;
+.buttonai > .btnDesine{
+    width: 50px;
+    height: 50px;
+    color: var(--primary-color-anti);
+    background: var(--primary-color);
+    border:none;
+    font-size: 30px
 }
-.hedercarusel {
-  font-size: 40px;
+.hedercarusel{
+    font-size: 40px;
 }
-.caruimg {
-  height: 350px;
-  width: 250px;
-  padding: 40px;
-  padding-bottom: 25px;
-  filter: invert(100%);
+.caruimg{
+    height: 350px;
+    width : 250px;
+    padding: 40px;
+    padding-bottom: 25px;
+    filter: invert(100%);
 }
-.textUnder {
-  display: block;
-  color: white;
-  font-size: 25px;
+.textUnder{
+    display: block;
+   color:white;
+   font-size: 25px;
 }
-.maxheight {
-  max-height: 400px;
+.maxheight{
+    max-height: 400px;
 }
-.carusel {
-  text-align: center;
-  height: 400px;
-  background-color: blueviolet;
-  margin: 12.5px;
-  float: left;
-  border-radius: 20px;
+.carusel{
+    text-align: center;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 12.5px;
+    float :left;
+    border-radius: 20px;
+
 }
 /*  course slide ends here */
 
 /*  course syllabus starts here */
+.syllabus-row {
+    padding: 60px 80px 60px 60px;
+    background-color: #fff;
+    position: relative;
+}
+.syllabus-upper-part {
+    width: 100%;
+    display: inline-block;
+}
+.syllabus-callendar {
+    
+    float: left;
+    margin-top: 30px;
+}
+.syllabus-callendar-icon {
+    font-size: 35px;
+    width: 100%;
+    height: fit-content;
+    margin-left: 19%;
+    margin-bottom: 10px;
+    color: var( --secondary-color);
+}
+.syllabus-up-right {
+    width: 80%;
+    float: right;
+}
+.syllabus-up-right  .fa-angle-up {
+    font-size: 30px;
+    position: absolute;
+    right: 100px
+}
+.syllabus-up-right  .fa-angle-down {
+    font-size: 30px;
+    position: absolute;
+    right: 100px;
+    top: 70px;
+    visibility: hidden;
+}
+.syllabus-up-right::after {
+    content: '';
+    display:inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(239, 237, 237);
+    margin-top: 40px;
+}
+.syllabus-title{
+    margin-bottom: 20px;
+}
+.syllabus-amount-of-time {
+    margin-top: 20px;
+}
+.syllabus-up-right > .syllabus-amount-of-time span {
+    float: left; 
+    width: fit-content;
+    margin-right: 40px;
+}
+
+.syllabus-list {
+    width:80%;
+    margin: 10px 0 0 20%;
+    list-style: none;
+    margin-top:40px;
+}
+.syllabus-list > .syllabus-list-line {
+    margin-top: 30px;
+    width: 100%;
+    display:flex;
+}
+.syllabus-list > li > i{
+    width: 60px;
+    text-align:center;
+    font-size: 22px;
+}
+.syllabus-list > li > i.fa-play-circle-o {
+    width: 40px;
+    font-size: 25px;
+    color: var( --primary-color);
+    height: 25px;
+    text-align: left;
+}
+.syllabus-list > li > p{
+    width: calc(100% - 180px);
+}
+.syllabus-list > li > time{
+    width: 120px;
+    text-align: center;
+}
+.syllabus-list > li:first-child > i:last-child{
+    font-size:18px;
+    color: var(--primary-color);
+    font-style: inherit;
+    font-weight: 600;
+}
+@media (max-width: 991px) {
+    .syllabus-up-right {
+        width: 100%;
+        margin-top: 35px;
+    }
+    .syllabus-list {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .syllabus-row {
+        font-size: 12px;
+    }
+    .section-title-h3.syllabus-title {
+        font-size: 24px;
+    }
+    .syllabus-up-right  .section-description {
+        font-size: 16px;
+    }
+    .syllabus-list > li:first-child > i:last-child{
+        font-size: 14px;
+    }
+}
 /*  course syllabus ends here */
 
 /*  course benefits starts here */
@@ -311,62 +484,65 @@
 /*  instructors ends here */
 
 /*  footer starts here */
-.clickable {
-  list-style-type: none;
-  color: gray;
-  margin: 7px;
+.clickable{
+    list-style-type: none;
+    color :var(--description-color);
+    margin:7px;
 }
-.clickable:hover {
-  color: aqua;
-  position: relative;
-  right: -15px;
+.clickable:hover{
+    color:var(--primary-color);
+    position: relative; 
+    right: -15px;
 }
-.placeholder {
-  font-size: 20px;
-  line-height: 20p;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 0px;
-  border-radius: 20px;
-  border-width: 0px;
-  background: var(--primary-color);
+.placeholder{
+    font-size: 20px;
+    line-height: 20p;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 0px;
+    border-radius: 20px;
+    border-width: 0px;
+    background: var(--primary-color);
 }
-.subscribe {
-  font-size: 20px;
-  line-height: 20p;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 20px;
-  border-width: 0px;
-  background: var(--secondary-color);
-  float: right;
-  position: relative;
-  top: -43px;
+.placeholder:focus{
+    outline: none;
 }
-.subscribe:hover {
-  cursor: pointer;
+.subscribe{
+    font-size: 20px;
+    line-height: 20p;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    border-width: 0px;
+    background: var(--secondary-color);
+    float:right;
+    position: relative;
+    top:-43px;
 }
-.socialLinks {
-  margin-top: 10px;
+.subscribe:hover{
+    cursor: pointer;
 }
-.socialLinks:hover {
-  cursor: pointer;
+.socialLinks{
+    margin-top:10px;
 }
-.socialimg {
-  margin: 7px;
+.socialLinks:hover{
+    cursor: pointer;
 }
-.footerh2 {
-  font-size: 30px;
-  margin-bottom: 30px;
+.socialimg{
+    margin:7px;
 }
-.greytext {
-  color: grey;
-  margin-bottom: 20px;
+.footerh2{
+    font-size: 30px;
+    margin-bottom: 30px;
 }
-.emailsub {
-  display: inline-block;
-  max-width: 400px;
+.greytext{
+    color:var(--description-color);
+    margin-bottom: 20px;
+}
+.emailsub{
+    display:inline-block;
+    max-width: 400px;
 }
 
 /*  footer ends here */

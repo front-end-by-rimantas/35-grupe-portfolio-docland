@@ -1,28 +1,28 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3rd-party */
-@import '../3rd-party/font-awesome.min.css';
+@import "../3rd-party/font-awesome.min.css";
 /* components */
-@import '../components/button.css';
-@import '../components/form.css';
+@import "../components/button.css";
+@import "../components/form.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header starts here */
 .header-container {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .header-container .logo {
-    float:left;
-    padding: 20px 10px;
-    margin: 0;
+  float: left;
+  padding: 20px 10px;
+  margin: 0;
 }
 
-.header-container .navigation{
-    float: right;
+.header-container .navigation {
+  float: right;
 }
 .dropdown {
     position: relative;
@@ -49,6 +49,7 @@
     transition-duration: 0.7s;
     transition-timing-function: linear;
     cursor: pointer;
+
 }
 .dropdown-content {
     display: none;
@@ -86,25 +87,25 @@
    
 }
 .hamburger {
-    font-size: 35px;
-    padding: 12px 5px;
-    font-weight: 100;
-    color: var(--description-color);
- }
+  font-size: 35px;
+  padding: 12px 5px;
+  font-weight: 100;
+  color: var(--description-color);
+}
 
 .header-container .hamburger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .header-container .login {
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--description-color);
-    display: inline-block;
-    padding-bottom: 10px;
-    border-bottom: var(--secondary-color) solid 1px;
-    margin: 17px 20px 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--description-color);
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: var(--secondary-color) solid 1px;
+  margin: 17px 20px 0px 20px;
 }
 /* header ends here */
 
@@ -169,14 +170,13 @@
     right: -1px;
     bottom: -60px;
 }
-
 .right-column > .hero-video {
     position: relative;
 }
 
-.right-column > .hero-video > .upper-pic{
-    width: 100%;
-    height:fit-content;
+.right-column > .hero-video > .upper-pic {
+  width: 100%;
+  height: fit-content;
 }
 
 .right-column > .hero-video > .hero-btn-play{
@@ -213,10 +213,10 @@
 /*  countdown ends here */
 
 /*  course slide starts here */
-.buttonai{
-    float: right;
-position: relative;
-right:30px
+.buttonai {
+  float: right;
+  position: relative;
+  right: 30px;
 }
 
 .buttonai > .btnKaire{
@@ -261,7 +261,7 @@ font-size: 30px;
     margin: 12.5px;
     float :left;
     border-radius: 20px;
-    
+
 }
 /*  course slide ends here */
 
@@ -390,6 +390,88 @@ font-size: 30px;
 /*  course benefits ends here */
 
 /*  pricing starts here */
+.price-box1 {
+  background-color: var(--primary-color-anti);
+  padding: 30px 30px 30px ;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+.priceboxHeader1 {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  vertical-align: bottom;
+}
+.price1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.month {
+  font-size: 18px;
+  color: #707070;
+  padding-top: 38px;
+  
+}
+.text1 {
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.price-box2 {
+  background-color: var(--primary-color);
+  padding: 30px 30px 30px  ;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+.priceBoxHeader2 {
+  display: flex;
+  gap:10px
+}
+.price2 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--primary-color-anti);
+  float: left;
+}
+.discountPrice {
+  display: inline-block;
+  margin-top: 12px;
+}
+.price3 {
+  color: #cbfff5;
+  text-decoration: line-through;
+  font-size: 24px;
+  display: block;
+  font-weight: 700;
+}
+.year {
+  font-size: 18px;
+  color: var(--primary-color-anti);
+  display: block;
+}
+.text2 {
+  padding: 19px 0;
+  font-size: 16px;
+}
+.text-pricing {
+  line-height: 30px;
+  padding: 0 0 20px;
+  list-style: none;
+}
+.price-box1 > ul li::before {
+  content: "✓";
+  padding: 0 8px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+.price-box2 > ul li::before {
+    content: "✓";
+    padding: 0 8px;
+    color: var(--primary-color-anti);
+    font-weight: 900;
+  }
+
 /*  pricing ends here */
 
 /*  reviews starts here */

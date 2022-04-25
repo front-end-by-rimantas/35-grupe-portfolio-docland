@@ -24,9 +24,12 @@
 .header-container .navigation{
     float: right;
 }
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
 
-
-.header-container .dropdown {
+.header-container .dropbtn {
     padding: 20px 28px;
     font-weight: 500;
     font-size: 19px;
@@ -36,17 +39,52 @@
     border: none;
 }
 @media (max-width: 1199px) {
-    .header-container .dropdown {
+    .header-container .dropbtn {
         padding: 20px 8px;
     }
 }
 
-.header-container .dropdown:hover {
+.header-container .dropbtn:hover {
     color: var(--primary-color);
     transition-duration: 0.7s;
+    transition-timing-function: linear;
     cursor: pointer;
 }
-
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    text-decoration: none;
+    width: 260px;
+    padding: 30px;
+}
+.dropdown:hover .dropdown-content{
+    display: block; 
+}
+.dropdown-content .home-dropdown-1{
+    text-decoration: none;
+    display:block;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: var(--description-color);
+    line-height: 1.6em;
+    text-transform: capitalize;
+}
+.dropdown-content:nth-child(2) .home-dropdown-1:nth-child(8){
+    color: var(--primary-color);
+}
+.dropdown-content:hover .home-dropdown-1{
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.dropdown-content .home-dropdown-1:hover {
+    color: var(--primary-color);
+    margin-left: 8px;
+   
+}
 .hamburger {
     font-size: 35px;
     padding: 12px 5px;
@@ -184,8 +222,8 @@ right:30px
 .buttonai > .btnKaire{
 width: 50px;
 height: 50px;
-color: white;
-background: aqua;
+color: var(--primary-color-anti);
+background: var(--primary-color);
 margin-right: 20px;
 border:none;
 font-size: 30px;
@@ -193,8 +231,8 @@ font-size: 30px;
 .buttonai > .btnDesine{
     width: 50px;
     height: 50px;
-    color: white;
-    background: aqua;
+    color: var(--primary-color-anti);
+    background: var(--primary-color);
     border:none;
     font-size: 30px
 }
@@ -238,7 +276,7 @@ font-size: 30px;
     display: inline-block;
 }
 .syllabus-callendar {
-    width: 20%;
+    
     float: left;
     margin-top: 30px;
 }
@@ -252,7 +290,7 @@ font-size: 30px;
 }
 .syllabus-up-right {
     width: 80%;
-    float: left;
+    float: right;
 }
 .syllabus-up-right  .fa-angle-up {
     font-size: 30px;
@@ -296,31 +334,56 @@ font-size: 30px;
     width: 100%;
     display:flex;
 }
+.syllabus-list > li > i{
+    width: 60px;
+    text-align:center;
+    font-size: 22px;
+}
 .syllabus-list > li > i.fa-play-circle-o {
-    width: 8%;
+    width: 40px;
     font-size: 25px;
     color: var( --primary-color);
     height: 25px;
     text-align: left;
 }
 .syllabus-list > li > p{
-    width: 62%;
+    width: calc(100% - 180px);
 }
 .syllabus-list > li > time{
-    width: 15%;
+    width: 120px;
+    text-align: center;
 }
-.syllabus-list > li > i{
-    width: 15%;
-    text-align:center;
-    font-size: 22px;
-}
-
 .syllabus-list > li:first-child > i:last-child{
     font-size:18px;
     color: var(--primary-color);
     font-style: inherit;
     font-weight: 600;
 }
+@media (max-width: 991px) {
+    .syllabus-up-right {
+        width: 100%;
+        margin-top: 35px;
+    }
+    .syllabus-list {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .syllabus-row {
+        font-size: 12px;
+    }
+    .section-title-h3.syllabus-title {
+        font-size: 24px;
+    }
+    .syllabus-up-right  .section-description {
+        font-size: 16px;
+    }
+    .syllabus-list > li:first-child > i:last-child{
+        font-size: 14px;
+    }
+}
+
 /*  course syllabus ends here */
 
 /*  course benefits starts here */
@@ -382,11 +445,11 @@ font-size: 30px;
 /*  footer starts here */
 .clickable{
     list-style-type: none;
-    color :gray;
+    color :var(--description-color);
     margin:7px;
 }
 .clickable:hover{
-    color:aqua;
+    color:var(--primary-color);
     position: relative; 
     right: -15px;
 }
@@ -399,6 +462,9 @@ font-size: 30px;
     border-radius: 20px;
     border-width: 0px;
     background: var(--primary-color);
+}
+.placeholder:focus{
+    outline: none;
 }
 .subscribe{
     font-size: 20px;
@@ -430,7 +496,7 @@ font-size: 30px;
     margin-bottom: 30px;
 }
 .greytext{
-    color:grey;
+    color:var(--description-color);
     margin-bottom: 20px;
 }
 .emailsub{

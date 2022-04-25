@@ -28,12 +28,63 @@
                 <nav class="navigation">
                     <i class="fa fa-bars hamburger hidden-lg"></i>
                     <div class="hidden visible-lg">
-                        <button class="dropdown active" href="#">Home</button>
-                        <button class="dropdown" href="#">Pricing</button>
-                        <button class="dropdown" href="#">Career</button>
-                        <button class="dropdown" href="#">Pages</button>
-                        <button class="dropdown" href="#">Blog</button>
-                        <button class="dropdown" href="#">Contact</button>
+                        <div class="dropdown">
+                            <button class="dropbtn" href="#">Home</button>
+                            <div class="dropdown-content">
+                                <a class="home-dropdown-1" href="#">Plugins</a>
+                                <a class="home-dropdown-1" href="#">Email marketing</a>
+                                <a class="home-dropdown-1" href="#">Affiliate Marketing</a>
+                                <a class="home-dropdown-1" href="#">Analytics</a>
+                                <a class="home-dropdown-1" href="#">CRM</a>
+                                <a class="home-dropdown-1" href="#">POS</a>
+                                <a class="home-dropdown-1" href="#">Payment</a>
+                                <a class="home-dropdown-1" href="#">Course</a>
+                                <a class="home-dropdown-1" href="#">Ebook</a>
+                                <a class="home-dropdown-1" href="#">Management tools</a>
+                                <a class="home-dropdown-1" href="#">Learning apps</a>
+                                <a class="home-dropdown-1" href="#">Hosting</a>
+                                <a class="home-dropdown-1" href="#">Prototype tools</a>
+                            </div>
+                        </div>
+                            <button class="dropbtn" href="#">Pricing</button>
+                        <div class="dropdown">
+                            <button class="dropbtn" href="#">Career</button>
+                            <div class="dropdown-content">
+                                <a class="home-dropdown-1" href="#">Job grid</a>
+                                <a class="home-dropdown-1" href="#">Job list</a>
+                                <a class="home-dropdown-1" href="#">Job details v1</a>
+                                <a class="home-dropdown-1" href="#">Job details v2</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" href="#">Pages</button>
+                            <div class="dropdown-content">
+                                <a class="home-dropdown-1" href="#">About</a>
+                                <a class="home-dropdown-1" href="#">Team</a>
+                                <a class="home-dropdown-1" href="#">Testimonials</a>
+                                <a class="home-dropdown-1" href="#">Service</a>
+                                <a class="home-dropdown-1" href="#">Service style</a>
+                                <a class="home-dropdown-1" href="#">Faq</a>
+                                <a class="home-dropdown-1" href="#">Sign up</a>
+                                <a class="home-dropdown-1" href="#">Sign in</a>
+                                <a class="home-dropdown-1" href="#">404</a>
+                                <a class="home-dropdown-1" href="#">Comming soon</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" href="#">Blog</button>
+                            <div class="dropdown-content">
+                                <a class="home-dropdown-1" href="#">Blog default</a>
+                                <a class="home-dropdown-1" href="#">Blog details</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" href="#">Contact</button>
+                            <div class="dropdown-content">
+                                <a class="home-dropdown-1" href="#">Contact v1</a>
+                                <a class="home-dropdown-1" href="#">Contact v2</a>
+                            </div>
+                        </div>
                         <a class="login" href="#">Login</a>
                         <a class="btn" href="#">Join Now</a>
                     </div>
@@ -148,8 +199,6 @@
     <!--  countdown ends here -->
 
     <!--  course slide starts here -->
-
-
 <section class="container">
     <div class="row">
         <div class="col-10 ">
@@ -518,13 +567,7 @@
                </li>
            </ul>
         </div>
-    </div>
-
-        <div class="visible hidden-md">
-            <a href="#" class="btn">Download Syllabus</a>
-        </div>
-    </div>
-    
+    </div>    
 </section>
     <!--  course syllabus ends here -->
 
@@ -695,7 +738,7 @@
     </div>
 </section>
     <!--  instructors ends here -->
-
+   
     <!--  footer starts here -->
     <footer class="container">
         <div class="row">
@@ -741,7 +784,10 @@
         </div>
     </footer>
     <!--  footer ends here -->
-
+    <button onclick="topFunction()"id="backToTopBtn" >
+    <div class="fa fa-angle-up center"></div>
+    </button>
     <script src="./js/pages/home.js" defer></script>
+    <script src="./js/components/backtotop.js" defer></script>
   </body>
 </html>

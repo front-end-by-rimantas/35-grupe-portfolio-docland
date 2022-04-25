@@ -323,7 +323,6 @@ font-size: 30px;
     width: fit-content;
     margin-right: 40px;
 }
-
 .syllabus-list {
     width:80%;
     margin: 10px 0 0 20%;
@@ -384,6 +383,7 @@ font-size: 30px;
         font-size: 14px;
     }
 }
+
 /*  course syllabus ends here */
 
 /*  course benefits starts here */
@@ -481,6 +481,47 @@ font-size: 30px;
 /*  contact form ends here */
 
 /*  instructors starts here */
+.instructor-block {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.pic-ant-list {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.instructor-pic {
+    width:40%;
+    object-fit: contain;
+}
+
+.instructor-list {
+    list-style: none;
+    margin-top: 20px;
+}
+.instructor-item {
+    display:flex;
+    align-items: center;
+}
+.instructor-item i {
+    margin-right: 10px;
+}
+.instructor-item:nth-child(n + 2) > i {
+    color: var(--secondary-color);
+}
+.instructor-item:nth-child(1) > i {
+    background: linear-gradient(177deg, rgba(52,96,155,1) 19%, rgba(251,192,6,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 991px) {
+    .instructor-block:first-of-type {
+        margin-bottom: 40px;
+    }
+}
 /*  instructors ends here */
 
 /*  footer starts here */

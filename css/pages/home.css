@@ -372,6 +372,11 @@ font-size: 30px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@media (max-width: 991px) {
+    .instructor-block:first-of-type {
+        margin-bottom: 40px;
+    }
+}
 /*  instructors ends here */
 
 /*  footer starts here */

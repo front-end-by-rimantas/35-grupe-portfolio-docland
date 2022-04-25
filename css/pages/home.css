@@ -24,9 +24,12 @@
 .header-container .navigation{
     float: right;
 }
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
 
-
-.header-container .dropdown {
+.header-container .dropbtn {
     padding: 20px 28px;
     font-weight: 500;
     font-size: 19px;
@@ -36,17 +39,52 @@
     border: none;
 }
 @media (max-width: 1199px) {
-    .header-container .dropdown {
+    .header-container .dropbtn {
         padding: 20px 8px;
     }
 }
 
-.header-container .dropdown:hover {
+.header-container .dropbtn:hover {
     color: var(--primary-color);
     transition-duration: 0.7s;
+    transition-timing-function: linear;
     cursor: pointer;
 }
-
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    text-decoration: none;
+    width: 260px;
+    padding: 30px;
+}
+.dropdown:hover .dropdown-content{
+    display: block; 
+}
+.dropdown-content .home-dropdown-1{
+    text-decoration: none;
+    display:block;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: var(--description-color);
+    line-height: 1.6em;
+    text-transform: capitalize;
+}
+.dropdown-content:nth-child(2) .home-dropdown-1:nth-child(8){
+    color: var(--primary-color);
+}
+.dropdown-content:hover .home-dropdown-1{
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.dropdown-content .home-dropdown-1:hover {
+    color: var(--primary-color);
+    margin-left: 8px;
+   
+}
 .hamburger {
     font-size: 35px;
     padding: 12px 5px;
@@ -349,7 +387,6 @@ font-size: 30px;
 /*  course syllabus ends here */
 
 /*  course benefits starts here */
-
 /*  course benefits ends here */
 
 /*  pricing starts here */

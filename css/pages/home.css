@@ -238,7 +238,7 @@ font-size: 30px;
     display: inline-block;
 }
 .syllabus-callendar {
-    width: 20%;
+    
     float: left;
     margin-top: 30px;
 }
@@ -252,7 +252,7 @@ font-size: 30px;
 }
 .syllabus-up-right {
     width: 80%;
-    float: left;
+    float: right;
 }
 .syllabus-up-right  .fa-angle-up {
     font-size: 30px;
@@ -297,30 +297,54 @@ font-size: 30px;
     width: 100%;
     display:flex;
 }
+.syllabus-list > li > i{
+    width: 60px;
+    text-align:center;
+    font-size: 22px;
+}
 .syllabus-list > li > i.fa-play-circle-o {
-    width: 8%;
+    width: 40px;
     font-size: 25px;
     color: var( --primary-color);
     height: 25px;
     text-align: left;
 }
 .syllabus-list > li > p{
-    width: 62%;
+    width: calc(100% - 180px);
 }
 .syllabus-list > li > time{
-    width: 15%;
+    width: 120px;
+    text-align: center;
 }
-.syllabus-list > li > i{
-    width: 15%;
-    text-align:center;
-    font-size: 22px;
-}
-
 .syllabus-list > li:first-child > i:last-child{
     font-size:18px;
     color: var(--primary-color);
     font-style: inherit;
     font-weight: 600;
+}
+@media (max-width: 991px) {
+    .syllabus-up-right {
+        width: 100%;
+        margin-top: 35px;
+    }
+    .syllabus-list {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .syllabus-row {
+        font-size: 12px;
+    }
+    .section-title-h3.syllabus-title {
+        font-size: 24px;
+    }
+    .syllabus-up-right  .section-description {
+        font-size: 16px;
+    }
+    .syllabus-list > li:first-child > i:last-child{
+        font-size: 14px;
+    }
 }
 /*  course syllabus ends here */
 

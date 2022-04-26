@@ -1,32 +1,35 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3rd-party */
-@import '../3rd-party/font-awesome.min.css';
+@import "../3rd-party/font-awesome.min.css";
 /* components */
-@import '../components/button.css';
-@import '../components/form.css';
+@import "../components/button.css";
+@import "../components/form.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header starts here */
 .header-container {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .header-container .logo {
-    float:left;
-    padding: 20px 10px;
-    margin: 0;
+  float: left;
+  padding: 20px 10px;
+  margin: 0;
 }
 
-.header-container .navigation{
-    float: right;
+.header-container .navigation {
+  float: right;
+}
+.dropdown {
+    position: relative;
+    display:inline-block;
 }
 
-
-.header-container .dropdown {
+.header-container .dropbtn {
     padding: 20px 28px;
     font-weight: 500;
     font-size: 19px;
@@ -36,37 +39,73 @@
     border: none;
 }
 @media (max-width: 1199px) {
-    .header-container .dropdown {
+    .header-container .dropbtn {
         padding: 20px 8px;
     }
 }
 
-.header-container .dropdown:hover {
+.header-container .dropbtn:hover {
     color: var(--primary-color);
     transition-duration: 0.7s;
+    transition-timing-function: linear;
     cursor: pointer;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    text-decoration: none;
+    width: 260px;
+    padding: 30px;
+}
+.dropdown:hover .dropdown-content{
+    display: block; 
+}
+.dropdown-content .home-dropdown-1{
+    text-decoration: none;
+    display:block;
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: var(--description-color);
+    line-height: 1.6em;
+    text-transform: capitalize;
+}
+.dropdown-content:nth-child(2) .home-dropdown-1:nth-child(8){
+    color: var(--primary-color);
+}
+.dropdown-content:hover .home-dropdown-1{
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.dropdown-content .home-dropdown-1:hover {
+    color: var(--primary-color);
+    margin-left: 8px;
+   
+}
+.hamburger {
+  font-size: 35px;
+  padding: 12px 5px;
+  font-weight: 100;
+  color: var(--description-color);
 }
 
-.hamburger {
-    font-size: 35px;
-    padding: 12px 5px;
-    font-weight: 100;
-    color: var(--description-color);
- }
-
 .header-container .hamburger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .header-container .login {
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--description-color);
-    display: inline-block;
-    padding-bottom: 10px;
-    border-bottom: var(--secondary-color) solid 1px;
-    margin: 17px 20px 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--description-color);
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: var(--secondary-color) solid 1px;
+  margin: 17px 20px 0px 20px;
 }
 /* header ends here */
 
@@ -131,14 +170,13 @@
     right: -1px;
     bottom: -60px;
 }
-
 .right-column > .hero-video {
     position: relative;
 }
 
-.right-column > .hero-video > .upper-pic{
-    width: 100%;
-    height:fit-content;
+.right-column > .hero-video > .upper-pic {
+  width: 100%;
+  height: fit-content;
 }
 
 .right-column > .hero-video > .hero-btn-play{
@@ -155,10 +193,9 @@
 /*  countdown starts here */
 
 .countdown {
-    padding: 20px;
     text-align: center;
     border-radius: 20px;
-    padding: 60px 50px;
+    padding: 60px 0px;
 }
 .countdown-badge {
     color: var(--primary-color);
@@ -166,26 +203,37 @@
     padding: 8px 18px;
     border-radius: 20px;
 }
+.the-countdown {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+}
 .time-element {
-    width: 24%;
     height: 80px;
-    display: inline-block;
     margin-top: 20px;
+}
+@media (max-width: 575px) {
+    .time-element > .section-title-h2 {
+        font-size: 28px;
+    }
+    .time-element > .section-description {
+        font-size: 14px;
+    }
 }
 /*  countdown ends here */
 
 /*  course slide starts here */
 .buttonai {
-    float: right;
-position: relative;
-right:30px
+  float: right;
+  position: relative;
+  right: 30px;
 }
 
 .buttonai > .btnKaire{
 width: 50px;
 height: 50px;
-color: white;
-background: aqua;
+color: var(--primary-color-anti);
+background: var(--primary-color);
 margin-right: 20px;
 border:none;
 font-size: 30px;
@@ -193,8 +241,8 @@ font-size: 30px;
 .buttonai > .btnDesine{
     width: 50px;
     height: 50px;
-    color: white;
-    background: aqua;
+    color: var(--primary-color-anti);
+    background: var(--primary-color);
     border:none;
     font-size: 30px
 }
@@ -223,13 +271,21 @@ font-size: 30px;
     margin: 12.5px;
     float :left;
     border-radius: 20px;
-    
+
 }
 /*  course slide ends here */
 
 /*  course syllabus starts here */
+
+.syllabus-main-title {
+    float: left;
+}
+.syllabus-download {
+    float: right;
+}
+
 .syllabus-row {
-    padding: 60px 80px 60px 60px;
+    padding: 60px 5% 60px 4%;
     background-color: #fff;
     position: relative;
 }
@@ -238,7 +294,6 @@ font-size: 30px;
     display: inline-block;
 }
 .syllabus-callendar {
-    width: 20%;
     float: left;
     margin-top: 30px;
 }
@@ -252,17 +307,17 @@ font-size: 30px;
 }
 .syllabus-up-right {
     width: 80%;
-    float: left;
+    float: right;
 }
 .syllabus-up-right  .fa-angle-up {
     font-size: 30px;
     position: absolute;
-    right: 100px
+    right: 8%;
 }
 .syllabus-up-right  .fa-angle-down {
     font-size: 30px;
     position: absolute;
-    right: 100px;
+    right: 8%;
     top: 70px;
     visibility: hidden;
 }
@@ -272,7 +327,7 @@ font-size: 30px;
     height: 1px;
     width: 100%;
     background-color: rgb(239, 237, 237);
-    margin-top: 40px;
+    margin-top: 35px;
 }
 .syllabus-title{
     margin-bottom: 20px;
@@ -285,46 +340,89 @@ font-size: 30px;
     width: fit-content;
     margin-right: 40px;
 }
-
 .syllabus-list {
     width:80%;
-    margin: 10px 0 0 20%;
+    margin: 5px 0 0 20%;
     list-style: none;
-    margin-top:40px;
+    display: inline-block;
 }
 .syllabus-list > .syllabus-list-line {
     margin-top: 30px;
     width: 100%;
     display:flex;
 }
+.syllabus-list > li > i{
+    width: 17%;
+    text-align:center;
+    font-size: 22px;
+}
 .syllabus-list > li > i.fa-play-circle-o {
-    width: 8%;
+    width: 40px;
     font-size: 25px;
     color: var( --primary-color);
     height: 25px;
     text-align: left;
 }
 .syllabus-list > li > p{
-    width: 62%;
+    margin-right: 20px;
+    width: calc(65% - 60px);
 }
 .syllabus-list > li > time{
-    width: 15%;
+    width: 13%;
+    text-align: center;
+    margin-right: 5%;
 }
-.syllabus-list > li > i{
-    width: 15%;
-    text-align:center;
-    font-size: 22px;
-}
-
 .syllabus-list > li:first-child > i:last-child{
     font-size:18px;
     color: var(--primary-color);
     font-style: inherit;
     font-weight: 600;
 }
+
+.syllabus-list > li:first-child > i:last-child:hover{
+    cursor: pointer;
+}
+.syllabus-download-bottom {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 991px) {
+  .syllabus-row {
+        padding: 60px 1%;
+    }
+    .syllabus-up-right {
+        width: 100%;
+        margin-top: 35px;
+    }
+    .syllabus-list {
+        margin-left: 0;
+        width: 100%;
+    }
+    .syllabus-up-right  .fa-angle-up {
+        right: 4%;
+    }
+    .syllabus-up-right  .fa-angle-down {
+        right: 4%;
+}
+@media (max-width: 767px) {
+    .syllabus-row {
+        font-size: 12px;
+    }
+    .section-title-h3.syllabus-title {
+        font-size: 24px;
+    }
+    .syllabus-up-right  .section-description {
+        font-size: 16px;
+    }
+    .syllabus-list > li:first-child > i:last-child{
+        font-size: 14px;
+    }
+}
+
 /*  course syllabus ends here */
 
-/*  course benefits starts here */
+
+  /*  course benefits starts here */
 
 .benefit-card {
     border-radius: 25px;
@@ -387,29 +485,185 @@ font-size: 30px;
     border:none;
     font-size: 30px;
 }
-
+  
 /*  course benefits ends here */
 
 /*  pricing starts here */
+.price-box1 {
+  background-color: var(--primary-color-anti);
+  padding: 30px 30px 30px ;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+.priceboxHeader1 {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  vertical-align: bottom;
+}
+.price1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.month {
+  font-size: 18px;
+  color: #707070;
+  padding-top: 38px;
+  
+}
+.text1 {
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.price-box2 {
+  background-color: var(--primary-color);
+  padding: 30px 30px 30px  ;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+.priceBoxHeader2 {
+  display: flex;
+  gap:10px
+}
+.price2 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--primary-color-anti);
+  float: left;
+}
+.discountPrice {
+  display: inline-block;
+  margin-top: 12px;
+}
+.price3 {
+  color: #cbfff5;
+  text-decoration: line-through;
+  font-size: 24px;
+  display: block;
+  font-weight: 700;
+}
+.year {
+  font-size: 18px;
+  color: var(--primary-color-anti);
+  display: block;
+}
+.text2 {
+  padding: 19px 0;
+  font-size: 16px;
+}
+.text-pricing {
+  line-height: 30px;
+  padding: 0 0 20px;
+  list-style: none;
+}
+.price-box1 > ul li::before {
+  content: "✓";
+  padding: 0 8px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+.price-box2 > ul li::before {
+    content: "✓";
+    padding: 0 8px;
+    color: var(--primary-color-anti);
+    font-weight: 900;
+  }
+
 /*  pricing ends here */
 
 /*  reviews starts here */
 /*  reviews ends here */
 
 /*  contact form starts here */
+.home-contact-form {
+    border-radius: 20px;
+    padding: 120px 80px;
+}
+.home-contact-form .home-input-btn {
+    border-bottom: var(--primary-color-anti) solid 2px;
+    margin-top: 30px;
+    height: 38px;
+}
+
+.home-contact-form .home-cf-input {
+    background-color: transparent;
+    width: calc(100% - 40px);
+    height: 38px;
+    border: none;
+    padding-bottom: 16px;
+}
+.home-cf-input::placeholder {
+    color: var(--primary-color-anti);
+    font-size: 16px;
+    
+}
+.home-cf-input:focus-visible {
+    outline: none;
+}
+.home-contact-form .fa-long-arrow-right {
+    width: 36px;
+    height: 38px;
+    display: inline-block;
+    padding-bottom: 16px;
+    font-size: 18px;
+}
+
 /*  contact form ends here */
 
 /*  instructors starts here */
+.instructor-block {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.pic-ant-list {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.instructor-pic {
+    width:40%;
+    object-fit: contain;
+}
+
+.instructor-list {
+    list-style: none;
+    margin-top: 20px;
+}
+.instructor-item {
+    display:flex;
+    align-items: center;
+}
+.instructor-item i {
+    margin-right: 10px;
+}
+.instructor-item:nth-child(n + 2) > i {
+    color: var(--secondary-color);
+}
+.instructor-item:nth-child(1) > i {
+    background: linear-gradient(177deg, rgba(52,96,155,1) 19%, rgba(251,192,6,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 991px) {
+    .instructor-block:first-of-type {
+        margin-bottom: 40px;
+    }
+}
 /*  instructors ends here */
 
 /*  footer starts here */
 .clickable{
     list-style-type: none;
-    color :gray;
+    color :var(--description-color);
     margin:7px;
 }
 .clickable:hover{
-    color:aqua;
+    color:var(--primary-color);
     position: relative; 
     right: -15px;
 }
@@ -422,6 +676,9 @@ font-size: 30px;
     border-radius: 20px;
     border-width: 0px;
     background: var(--primary-color);
+}
+.placeholder:focus{
+    outline: none;
 }
 .subscribe{
     font-size: 20px;
@@ -453,7 +710,7 @@ font-size: 30px;
     margin-bottom: 30px;
 }
 .greytext{
-    color:grey;
+    color:var(--description-color);
     margin-bottom: 20px;
 }
 .emailsub{

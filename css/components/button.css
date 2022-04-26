@@ -50,7 +50,7 @@
     background-color: transparent;
     color: var(--primary-color-anti);
     padding: 0;
-
+    transition: all 0.2s ease-in;
 }
 .btn.btn-arrow:hover {
     color: var(--secondary-color);

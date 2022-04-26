@@ -515,22 +515,36 @@ font-size: 30px;
     padding: 120px 80px;
 }
 .home-contact-form .home-input-btn {
-    border-bottom: var(--primary-color-anti) solid 2px;
+    border-bottom: var(--primary-color-anti) solid 1px;
     margin-top: 30px;
     height: 38px;
+    position: relative
 }
-
+.home-contact-form .home-input-btn::after {
+    content: '';
+    position:absolute;
+    left:0;
+    bottom: -1.5px;
+    height:1px;
+    width:0px;
+    background-color: var(--secondary-color);
+    transition: all 0.5s linear;
+}
+.home-input-btn:focus-within::after {
+    width: 100%;
+}
 .home-contact-form .home-cf-input {
     background-color: transparent;
     width: calc(100% - 40px);
     height: 38px;
     border: none;
     padding-bottom: 16px;
+    color: var(--primary-color-anti);
+    font-size: 16px;
 }
 .home-cf-input::placeholder {
     color: var(--primary-color-anti);
     font-size: 16px;
-    
 }
 .home-cf-input:focus-visible {
     outline: none;
@@ -542,7 +556,6 @@ font-size: 30px;
     padding-bottom: 16px;
     font-size: 18px;
 }
-
 /*  contact form ends here */
 
 /*  instructors starts here */

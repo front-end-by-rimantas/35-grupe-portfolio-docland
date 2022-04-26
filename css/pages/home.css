@@ -116,15 +116,21 @@
     bottom: -2px;
     position: absolute;
     display:inline-block;
-    transition: all 1s ease-in-out;
-    opacity: 2;
     background-color:var(--background-color);
+    animation: loginAnimation 1s;
+    animation-iteration-count: infinite;
 }
 .login:hover::after{
-    
+ 
     background-color:var(--background-color);
     transform: translateX(325%);
-  
+
+    animation-play-state: running;
+}
+@keyframes loginAnimation {
+    100% {
+        transform: translateX(325%);
+    }
 }
 /* header ends here */
 

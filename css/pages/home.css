@@ -25,7 +25,19 @@
     background-color: #fff;
     box-shadow: 0 2px 15px rgb(233, 231, 231);
     position:fixed;
-    transition: all 0s;
+    animation-name: header-on-scroll;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes header-on-scroll{
+    0% {
+        margin-top: -4%;
+        background-color: #fff;
+    }
+    100% {
+        margin-top: 0%;
+        background-color: #fff;
+    }
 }
 .header-container .logo {
   float: left;

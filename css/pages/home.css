@@ -253,10 +253,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(2, 1, 0, 0.75);
 }
 .hero-youtube {
     width: 714px;
-    height: 441px;  
+    height: 441px;
+    background-color:rgba(14, 10, 7);
+      
 }
 /* hero java-sript */
 /*  hero ends here */

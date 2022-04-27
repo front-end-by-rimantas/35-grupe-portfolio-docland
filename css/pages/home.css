@@ -285,7 +285,6 @@ font-size: 30px;
 .syllabus-row {
     padding: 60px 5% 60px 4%;
     background-color: #fff;
-    position: 
 }
 .syllabus-upper-part {
     width: 100%;
@@ -312,7 +311,7 @@ font-size: 30px;
 .syllabus-angle-down {
     font-size: 35px;
     position: absolute;
-    right: -22px;;
+    right: -22px;
     top: 14px;
     display:block
 }

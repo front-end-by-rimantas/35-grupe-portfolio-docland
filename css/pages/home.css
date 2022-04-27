@@ -20,6 +20,7 @@
   position:absolute;
   transition: all 0.5s linear;
 }
+/* java-script starts*/
 .header-container.header-on-scroll-up {
     padding: 0px;
     background-color: var(--primary-color-anti);
@@ -29,6 +30,10 @@
     animation-duration: 0.5s;
     animation-iteration-count: 1;
 }
+.header-container.header-on-scroll-up .login::after{
+    background-color: var(--primary-color-anti);
+}
+/* java-script ends*/
 @keyframes header-on-scroll{
     0% {
         margin-top: -4%;

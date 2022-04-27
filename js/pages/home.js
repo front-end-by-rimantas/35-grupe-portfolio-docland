@@ -37,6 +37,17 @@ addEventListener('scroll', scrollFunc);
 /*  course slide ends here */
 
 /*  course syllabus starts here */
+const syllabusRowDOM = document.querySelectorAll('.syllabus-row');
+const syllabusTopDOM = document.querySelectorAll('.syllabus-upper-part');
+
+for (let i = 0; i < syllabusTopDOM.length; i++){
+    syllabusRowDOM[i].addEventListener('click', function(){
+        for(let a = 0; a < syllabusTopDOM.length; a++) {
+            syllabusRowDOM[a].classList.remove('syllabus-list-open')
+        }
+        syllabusRowDOM[i].classList.toggle('syllabus-list-open');
+    });
+}
 /*  course syllabus ends here */
 
 /*  course benefits starts here */

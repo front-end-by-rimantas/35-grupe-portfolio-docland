@@ -25,14 +25,15 @@ addEventListener('scroll', scrollFunc);
 /* scroll up button ends here */
 
 /*  hero starts here */
-
-const heroPlayDOM = document.querySelector('.hero-btn-play');
-console.log(heroPlayDOM)
-function heroplay () {
- 
+const heroYoutubeDOM = document.querySelector('hero-youtube');
+const bodyDOM = document.querySelector('body');
+function heroPlay () {
+  bodyDOM.classList.add('hero-youtube-on');
 }
 
-addEventListener('click', hero-play)
+function turnPlayOff () {
+  bodyDOM.classList.remove('hero-youtube-on')
+}
 /*  hero ends here */
 
 /*  key facts starts here */

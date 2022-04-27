@@ -234,7 +234,7 @@
   height: fit-content;
 }
 
-.right-column > .hero-video > .hero-btn-play{
+.hero-btn-play{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -257,17 +257,23 @@
     display:none;
 }
 .hero-youtube {
-    width: 850px;
-    height: 500px;
+    width: 60%;
+    aspect-ratio: 16/9;
     background-color:transparent;
-    border: none;
+    border: var(--primary-color) 10px solid;
+    border-radius: 25px;
+    display: none;
 }
 .hero-youtube-x {
     color: #fff;
     display:flex;
     font-size: 20px;
-    margin-left: 830px;
-    margin-bottom: 10px;
+    margin-left: 980px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.hero-youtube-x:hover {
+    cursor: pointer;
 }
 /* turn on video with javasript */
 body.hero-youtube-on {
@@ -275,6 +281,9 @@ body.hero-youtube-on {
 }
 body.hero-youtube-on .hero-video-container {
     display: flex;
+}
+body.hero-youtube-on  .hero-youtube {
+    display: block;
 }
 /* hero java-sript ends */
 /*  hero ends here */

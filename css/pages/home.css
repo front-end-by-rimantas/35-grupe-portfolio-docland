@@ -59,7 +59,7 @@
 }
 
 .header-container .dropbtn {
-    padding: 20px 28px;
+    padding: 20px 28px 35px 28px;
     font-weight: 500;
     font-size: 19px;
     text-decoration: none;
@@ -87,7 +87,6 @@
     text-decoration: none;
     width: 260px;
     padding: 30px;
-    margin-top: 15px;
 }
 .dropdown:hover .dropdown-content{
     display: block; 

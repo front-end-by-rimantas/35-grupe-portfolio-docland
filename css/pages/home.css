@@ -12,10 +12,38 @@
 
 /* header starts here */
 .header-container {
-  padding-top: 0px;
-  background-color: var(--background-color);
+  padding: 0px;
+  width: 100%;
+  height: 110px;
+  background-color: transparent;
+  z-index: 1;
+  position:absolute;
+  transition: all 0.5s linear;
 }
-
+/* java-script starts*/
+.header-container.header-on-scroll-up {
+    padding: 0px;
+    background-color: var(--primary-color-anti);
+    box-shadow: 0 2px 15px rgb(233, 231, 231);
+    position:fixed;
+    animation-name: header-on-scroll;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+.header-container.header-on-scroll-up .login::after{
+    background-color: var(--primary-color-anti);
+}
+/* java-script ends*/
+@keyframes header-on-scroll{
+    0% {
+        margin-top: -4%;
+        background-color: var(--primary-color-anti);
+    }
+    100% {
+        margin-top: 0%;
+        background-color: var(--primary-color-anti);
+    }
+}
 .header-container .logo {
   float: left;
   padding: 20px 10px;
@@ -54,11 +82,12 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    z-index: 1;
-    background-color: #fff;
+    background-color: var(--primary-color-anti);
+    box-shadow: 0 2px 15px rgb(233, 231, 231);
     text-decoration: none;
     width: 260px;
     padding: 30px;
+    margin-top: 15px;
 }
 .dropdown:hover .dropdown-content{
     display: block; 
@@ -117,6 +146,7 @@
     position: absolute;
     display:inline-block;
     background-color:var(--background-color);
+    transition: all 0.5s linear;
 }
 .login:hover::after{
     animation: loginAnimation 0.7s;
@@ -136,7 +166,9 @@
 /* scroll up button ends here */
 
 /*  hero starts here */
-
+.hero-section-container {
+    margin-top: 110px;
+}
 .left-column > .hero-star-rating {
     font-size: 20px;
     color: #707070;

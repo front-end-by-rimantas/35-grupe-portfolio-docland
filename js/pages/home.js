@@ -30,11 +30,14 @@ const syllabusDownDOM = document.querySelectorAll('.syllabus-angle-down');
 
 
 for (let i = 0; i < syllabusTopDOM.length; i++){
+    
     syllabusRowDOM[i].addEventListener('click', function(){
-        syllabusRowDOM[i].classList.toggle('syllabus-list-open')
-    })
+        syllabusRowDOM[i].classList.toggle('syllabus-list-open');
+        if (syllabusRowDOM[i].classList.contains('syllabus-list-open')) {
+            console.log('atidaryta')
+        } else console.log('uzdaryta')
+    });
 }
-
 /*  course syllabus ends here */
 
 /*  course benefits starts here */

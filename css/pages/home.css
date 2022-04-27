@@ -230,7 +230,7 @@
 }
 
 .right-column > .hero-video > .upper-pic {
-  width: 100%;
+  max-width: 100%;
   height: fit-content;
 }
 
@@ -240,6 +240,25 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*hero java-script */
+
+.hero-video-container {
+    position:absolute;
+    z-index: 2;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-youtube {
+    width: 714px;
+    height: 441px;  
+}
+/* hero java-sript */
 /*  hero ends here */
 
 /*  key facts starts here */

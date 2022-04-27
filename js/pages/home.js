@@ -25,6 +25,14 @@ addEventListener('scroll', scrollFunc);
 /* scroll up button ends here */
 
 /*  hero starts here */
+
+const heroPlayDOM = document.querySelector('.hero-btn-play');
+console.log(heroPlayDOM)
+function heroplay () {
+ 
+}
+
+addEventListener('click', hero-play)
 /*  hero ends here */
 
 /*  key facts starts here */

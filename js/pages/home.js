@@ -21,21 +21,19 @@
 /*  course slide ends here */
 
 /*  course syllabus starts here */
-const syllabusDOM = document.querySelectorAll('.syllabus-container');
 const syllabusRowDOM = document.querySelectorAll('.syllabus-row');
+const syllabusTopDOM = document.querySelectorAll('.syllabus-upper-part');
+console.log(syllabusTopDOM.length)
 const syllabusListDOM = document.querySelectorAll('.syllabus-list');
-const syllabusUpDOM = document.querySelector('.syllabus-angle-up');
+const syllabusUpDOM = document.querySelectorAll('.syllabus-angle-up');
 const syllabusDownDOM = document.querySelectorAll('.syllabus-angle-down');
 
 
-for (let i = 0; i < syllabusRowDOM.length; i++){
+for (let i = 0; i < syllabusTopDOM.length; i++){
     syllabusRowDOM[i].addEventListener('click', function(){
-        syllabusListDOM[i].classList.toggle('syllabus-list-open')
+        syllabusRowDOM[i].classList.toggle('syllabus-list-open')
     })
 }
-
-    
-
 
 /*  course syllabus ends here */
 

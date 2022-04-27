@@ -285,12 +285,14 @@ font-size: 30px;
 .syllabus-row {
     padding: 60px 5% 60px 4%;
     background-color: #fff;
-    position: relative;
+    position: 
 }
 .syllabus-upper-part {
     width: 100%;
     display: inline-block;
+    position: relative;
 }
+
 .syllabus-callendar {
     float: left;
     margin-top: 30px;
@@ -307,22 +309,18 @@ font-size: 30px;
     width: 80%;
     float: right;
 }
-.syllabus-angle-up {
-    font-size: 30px;
-    position: absolute;
-    right: 8%;
-    display:none;
-}
 .syllabus-angle-down {
-    font-size: 30px;
+    font-size: 35px;
     position: absolute;
-    right: 8%;
-    top: 70px;
+    right: -22px;;
+    top: 14px;
+    display:block
 }
 .syllabus-angle-down:hover {
     cursor: pointer;
 }
 .syllabus-title{
+    width: 90%;
     margin-bottom: 20px;
 }
 .syllabus-amount-of-time {
@@ -339,17 +337,23 @@ font-size: 30px;
     margin: 5px 0 0 20%;
     list-style: none;
     display: none;
+    position: relative
 }
+.syllabus-angle-up {
+    font-size: 35px;
+    position: absolute;
+    top: -170px;
+}
+
 /* for javascrip start */
-.syllabus-row .syllabus-list.syllabus-list-open {
+.syllabus-row.syllabus-list-open .syllabus-list {
     display: inline-block;
 }
-.syllabus-angle-down.syllabus-list-open {
-    display:none;
+.syllabus-row.syllabus-list-open .syllabus-angle-down {
+    display: none;
 }
-.syllabus-angle-up.syllabus-list-open {
-    display:block;
-}
+
+
 /* for javascript end*/
 .syllabus-list::before {
     content: '';
@@ -384,13 +388,13 @@ font-size: 30px;
     text-align: center;
     margin-right: 5%;
 }
-.syllabus-list > li:first-child > i:last-child{
+.syllabus-list > li:nth-child(2) > i:last-child{
     font-size:18px;
     color: var(--primary-color);
     font-style: inherit;
     font-weight: 600;
 }
-.syllabus-list > li:first-child > i:last-child:hover{
+.syllabus-list > li:nth-child(2) > i:last-child:hover{
     cursor: pointer;
 }
 .syllabus-download-bottom {
@@ -411,9 +415,11 @@ font-size: 30px;
     }
     .syllabus-angle-up {
         right: 4%;
+        top: 205px;
     }
     .syllabus-angle-down {
         right: 4%;
+        top: 214px;
     }
 }
 @media (max-width: 767px) {

@@ -146,6 +146,7 @@
     position: absolute;
     display:inline-block;
     background-color:var(--background-color);
+    transition: all 0.5s linear;
 }
 .login:hover::after{
     animation: loginAnimation 0.7s;

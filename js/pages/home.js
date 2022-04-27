@@ -23,19 +23,13 @@
 /*  course syllabus starts here */
 const syllabusRowDOM = document.querySelectorAll('.syllabus-row');
 const syllabusTopDOM = document.querySelectorAll('.syllabus-upper-part');
-console.log(syllabusTopDOM.length)
-const syllabusListDOM = document.querySelectorAll('.syllabus-list');
-const syllabusUpDOM = document.querySelectorAll('.syllabus-angle-up');
-const syllabusDownDOM = document.querySelectorAll('.syllabus-angle-down');
-
 
 for (let i = 0; i < syllabusTopDOM.length; i++){
-    
     syllabusRowDOM[i].addEventListener('click', function(){
+        for(let a = 0; a < syllabusTopDOM.length; a++) {
+            syllabusRowDOM[a].classList.remove('syllabus-list-open')
+        }
         syllabusRowDOM[i].classList.toggle('syllabus-list-open');
-        if (syllabusRowDOM[i].classList.contains('syllabus-list-open')) {
-            console.log('atidaryta')
-        } else console.log('uzdaryta')
     });
 }
 /*  course syllabus ends here */

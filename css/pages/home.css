@@ -241,7 +241,7 @@
     transform: translate(-50%, -50%);
 }
 
-/*hero java-script */
+/*hero  video styling for java-script */
 
 .hero-video-container {
     position:absolute;
@@ -250,18 +250,33 @@
     left: 0%;
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(2, 1, 0, 0.75);
+    flex-direction:column;
+    display:none;
 }
 .hero-youtube {
-    width: 714px;
-    height: 441px;
-    background-color:rgba(14, 10, 7);
-      
+    width: 850px;
+    height: 500px;
+    background-color:transparent;
+    border: none;
 }
-/* hero java-sript */
+.hero-youtube-x {
+    color: #fff;
+    display:flex;
+    font-size: 20px;
+    margin-left: 830px;
+    margin-bottom: 10px;
+}
+/* turn on video with javasript */
+body.hero-youtube-on {
+    overflow: hidden;
+}
+body.hero-youtube-on .hero-video-container {
+    display: flex;
+}
+/* hero java-sript ends */
 /*  hero ends here */
 
 /*  key facts starts here */

@@ -455,8 +455,8 @@ font-size: 30px;
 .buttonai-center > .btnKaire{
     width: 50px;
     height: 50px;
-    color: white;
-    background: aqua;
+    color: var(--primary-color-anti);
+    background: var(--primary-color);
     margin-right: 20px;
     border:none;
     font-size: 30px;
@@ -465,8 +465,8 @@ font-size: 30px;
 .buttonai-center > .btnDesine{
     width: 50px;
     height: 50px;
-    color: white;
-    background: aqua;
+    color: var(--primary-color-anti);
+    background: var(--primary-color);
     border:none;
     font-size: 30px;
 }
@@ -716,7 +716,7 @@ font-size: 30px;
     color: var(--primary-color-anti);
     outline: none;
   }
-  ::placeholder {
+  .FooterRow ::placeholder {
     color: var(--primary-color-anti);
     font-weight: lighter;
     background-color: var(--primary-color);

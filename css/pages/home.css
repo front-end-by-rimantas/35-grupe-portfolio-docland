@@ -107,8 +107,7 @@
 }
 .dropdown-content .home-dropdown-1:hover {
     color: var(--primary-color);
-    margin-left: 8px;
-   
+    margin-left: 8px
 }
 .hamburger {
   font-size: 35px;
@@ -127,9 +126,33 @@
   text-decoration: none;
   color: var(--description-color);
   display: inline-block;
-  padding-bottom: 10px;
-  border-bottom: var(--secondary-color) solid 1px;
+  padding-bottom: 8px;
+  color: var(--secondary-color);
+  border-bottom: var(--secondary-color) solid 2px;
   margin: 17px 20px 0px 20px;
+  position:relative
+}
+.header-container .login::after {
+    content: '';
+    height: 2px;
+    width: 25px;
+    left: -50%;
+    bottom: -2px;
+    position: absolute;
+    display:inline-block;
+    background-color:var(--background-color);
+}
+.login:hover::after{
+    animation: loginAnimation 0.7s;
+    animation-iteration-count: 1 forwards;
+}
+@keyframes loginAnimation {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
 }
 /* header ends here */
 
@@ -630,65 +653,110 @@ font-size: 30px;
 /*  instructors ends here */
 
 /*  footer starts here */
-.clickable{
+.FooterRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 991px) {
+    .FooterRow {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .FooterRow {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .FooterRow {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .clickable {
     list-style-type: none;
-    color :var(--description-color);
-    margin:7px;
-}
-.clickable:hover{
-    color:var(--primary-color);
-    position: relative; 
-    right: -15px;
-}
-.placeholder{
-    font-size: 20px;
-    line-height: 20p;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 0px;
-    border-radius: 20px;
+    color: gray;
+    margin: 7px;
+    font-weight: 200;
+    line-height: 30px;
+    transition: all 0.5s;
+    
+  }
+  .clickable:hover {
+    color: var(--primary-color);
+    position: relative;
+    right: -10px;
+  }
+  .emailsub {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
     border-width: 0px;
     background: var(--primary-color);
-}
-.placeholder:focus{
-    outline: none;
-}
-.subscribe{
+    margin-top: 10px;
+    width: 90%;
+    justify-content: space-between;
+  }
+  
+  .input {
     font-size: 20px;
-    line-height: 20p;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 20px;
+    line-height: 20px;
+    padding: 20px 0 20px 30px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: none;
+    color: var(--primary-color-anti);
+    outline: none;
+  }
+  ::placeholder {
+    color: var(--primary-color-anti);
+    font-weight: lighter;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    padding: 23px;
+    outline: none;
+  }
+  .subscribe {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
     border-width: 0px;
     background: var(--secondary-color);
-    float:right;
-    position: relative;
-    top:-43px;
-}
-.subscribe:hover{
+    
+  }
+  .subscribe:hover {
     cursor: pointer;
-}
-.socialLinks{
-    margin-top:10px;
-}
-.socialLinks:hover{
+  }
+  .socialLinks {
+    margin: 10px;
+  }
+  
+  .socialLinks:hover {
     cursor: pointer;
-}
-.socialimg{
-    margin:7px;
-}
-.footerh2{
+  }
+  .socialimg {
+    padding: 10px 10px 20px;
+    margin: 4px;
+  }
+  .socialimg:hover {
+    border-radius: 50px;
+    background-color: var(--primary-color);
+  }
+  .footerh2 {
     font-size: 30px;
     margin-bottom: 30px;
-}
-.greytext{
-    color:var(--description-color);
-    margin-bottom: 20px;
-}
-.emailsub{
-    display:inline-block;
-    max-width: 400px;
-}
-
+  }
+  .greytext {
+    color: grey;
+    font-weight: 200;
+    line-height: 30px;
+  }
+  
 /*  footer ends here */

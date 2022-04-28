@@ -1,6 +1,15 @@
 // component imports
+import "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+import { topFunction,scrollFunction} from '../components/backtotop.js';
+import { slickSliderbr } from '../components/sliderbr.js';
+
 
 // components execution
+$(() => {
+  slickSliderbr("#slickslider");
+  $("#backToTopBtn").on("click",topFunction);
+});
+
 
 /* header starts here */
 
@@ -67,3 +76,7 @@ for (let i = 0; i < syllabusTopDOM.length; i++){
 
 /*  footer starts here */
 /*  footer ends here */
+
+
+
+window.onscroll = function() {scrollFunction()};

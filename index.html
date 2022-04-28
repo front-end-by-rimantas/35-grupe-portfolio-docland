@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DocLand</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"/>
@@ -214,7 +212,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <div class="maxheight sliderbr">
+            <div class="maxheight " id="slickslider">
                 <div class="carusel center">
                     <img class="caruimg" src="./img/caruselimg/brain.svg" alt="">
                     <span class="textUnder">Design Thinking</span>
@@ -858,11 +856,9 @@
         </div>
     </footer>
     <!--  footer ends here -->
-    <button onclick="topFunction()"id="backToTopBtn" >
+    <button id="backToTopBtn" >
     <div class="fa fa-angle-up center"></div>
     </button>
-    <script src="./js/pages/home.js" defer></script>
-    <script src="./js/components/backtotop.js" defer></script>
-    <script src="./js/components/sliderbr.js" defer></script>
+    <script src="./js/pages/home.js" type="module" defer></script>
   </body>
 </html>

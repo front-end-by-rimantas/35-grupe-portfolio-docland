@@ -536,7 +536,7 @@ border-radius: 10px;
     width: 100%;
 }
 
-.buttonai > .btnKaire{
+.buttonai-center > .btnKaire{
     width: 50px;
     height: 50px;
     color: var(--darker-blue);
@@ -546,11 +546,11 @@ border-radius: 10px;
     font-size: 30px;
     border-radius: 10px;
     }
-    .buttonai > .btnKaire:hover{
+    .buttonai-center > .btnKaire:hover{
         color: var(--primary-color-anti);
         background: var(--darker-blue);
     }
-    .buttonai > .btnDesine{
+    .buttonai-center > .btnDesine{
         width: 50px;
         height: 50px;
         color: var(--darker-blue);
@@ -559,7 +559,7 @@ border-radius: 10px;
         font-size: 30px;
         border-radius: 10px;
     }
-    .buttonai > .btnDesine:hover{
+    .buttonai-center > .btnDesine:hover{
         color: var(--primary-color-anti);
         background: var(--darker-blue);
     }

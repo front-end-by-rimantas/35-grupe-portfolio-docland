@@ -25,15 +25,42 @@ addEventListener('scroll', scrollFunc);
 /* scroll up button ends here */
 
 /*  hero starts here */
-const heroYoutubeDOM = document.querySelector('hero-youtube');
+const heroYoutubeDOM = document.querySelector('.hero-youtube');
 const bodyDOM = document.querySelector('body');
-function heroPlay () {
+const heroBtnPlay = document.querySelector('.hero-btn-play');
+const heroVideoContainerDOM = document.querySelector('.hero-video-container')
+
+function heroPlay() {
   bodyDOM.classList.add('hero-youtube-on');
+  heroVideoContainerDOM.innerHTML += `
+  <i class="hero-youtube-x fa fa-times"></i>
+  <iframe class="hero-youtube" src="https://www.youtube.com/embed/8abN2imNoUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  `
 }
 
-function turnPlayOff () {
-  bodyDOM.classList.remove('hero-youtube-on')
+function heroPlayOff() {
+  heroVideoContainerDOM.innerHTML -= `
+  <i class="hero-youtube-x fa fa-times"></i>
+  <iframe class="hero-youtube" src="https://www.youtube.com/embed/8abN2imNoUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  `
+  bodyDOM.classList.remove('hero-youtube-on');
 }
+
+heroBtnPlay.addEventListener('click', heroPlay)
+heroVideoContainerDOM.addEventListener('click', heroPlayOff)
+
+
+/* OR THIS WAY
+ onclick="heroPlay()" -->  add in html next to hero-btn-play
+ function heroPlay () {
+    bodyDOM.classList.add('hero-youtube-on');
+
+  onclick="turnPlayOff()" --> add in html next to hero-youtube-x
+  function turnPlayOff () {
+    bodyDOM.classList.remove('hero-youtube-on')
+}
+*/
+
 /*  hero ends here */
 
 /*  key facts starts here */

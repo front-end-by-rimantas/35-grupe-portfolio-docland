@@ -7,8 +7,8 @@ $(document).ready(function () {
     autoplaySpeed: 0,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: '.btnKaire',
-    nextArrow: '.btnDesine',
+    prevArrow: '.btnKaireBr',
+    nextArrow: '.btnDesineBr',
     responsive: [
       {
         breakpoint: 1199,
@@ -37,10 +37,10 @@ $(document).ready(function () {
     ],
   });
 });
-$('btnDesine').click(function() {
+$('btnDesineBr').click(function() {
     $(this).slickNext();
 });
-  $('btnKaire').click(function() {
+  $('btnKaireBr').click(function() {
     $(this).slickPrev();
 });
   

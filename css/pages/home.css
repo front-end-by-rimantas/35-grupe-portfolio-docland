@@ -248,7 +248,7 @@
     z-index: 100;
     top: 0%;
     left: 0%;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -256,19 +256,24 @@
     flex-direction:column;
     display:none;
 }
-.hero-youtube {
-    width: 800px;
+.video-esc-box{
+    display: flex;
+    flex-direction:column;
+    width: 820px;
     height: 450px;
-    background-color:transparent;
+    flex-shrink: 5;
+}
+.hero-youtube {
+    width: 100%;
+    height: 100%;
     border: none;
 }
 .hero-youtube-x {
     color: #fff;
     display:flex;
     font-size: 20px;
-    margin-left: 980px;
-    padding: 5px;
-    margin-bottom: 5px;
+    align-self: flex-end; 
+    padding: 15px;
 }
 .hero-youtube-x:hover {
     cursor: pointer;
@@ -278,13 +283,15 @@ body.hero-youtube-on {
     overflow: hidden;
 }
 body.hero-youtube-on .hero-video-container {
-    display: flex;
-    
-}
-body.hero-youtube-on  .hero-youtube {
-
+    display: flex;   
 }
 /* hero java-sript ends */
+@media (max-width:991px) {
+    .video-esc-box{
+        width: 100vw;
+        height: 56.25vw;
+    }
+}
 /*  hero ends here */
 
 /*  key facts starts here */
@@ -451,8 +458,6 @@ font-size: 30px;
 .syllabus-row.syllabus-list-open .syllabus-angle-down {
     display: none;
 }
-
-
 /* for javascript end*/
 .syllabus-list::before {
     content: '';

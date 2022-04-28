@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DocLand</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"/>
@@ -204,14 +207,14 @@
         <div class="col-10 ">
             <h2 class="section-title-h2">What You'll Learn From This Course</h2> 
         </div>
-        <div class="buttonai hidden visible-lg visible-xl">
-            <button class="btnKaire">&lt</button>
-            <button class="btnDesine">></button>
+        <div class="buttonai hidden visible-lg visible-xl ">
+            <button class="btnKaire prevArrow slick-arrow slide-next">&lt</button>
+            <button class="btnDesine nextArrow slick-arrow slide-prev">></button>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <div class="maxheight">
+            <div class="maxheight sliderbr">
                 <div class="carusel center">
                     <img class="caruimg" src="./img/caruselimg/brain.svg" alt="">
                     <span class="textUnder">Design Thinking</span>
@@ -219,6 +222,9 @@
                 <div class="carusel"><img class="caruimg" src="./img/caruselimg/form.svg" alt=""><span class="textUnder">Wireframe</span></div>
                 <div class="carusel"><img class="caruimg" src="./img/caruselimg/sheet.svg" alt=""><span class="textUnder">Prototype</span></div>
                 <div class="carusel"><img class="caruimg" src="./img/caruselimg/cekform.svg" alt=""><span class="textUnder">Sketch</span></div>
+               
+                <div class="carusel"><img class="caruimg" src="./img/caruselimg/brain.svg" alt=""><span class="textUnder">Wireframe</span></div>
+                <div class="carusel"><img class="caruimg" src="./img/caruselimg/form.svg" alt=""><span class="textUnder">Protorypes</span></div>
             </div>
         </div>
     </div>
@@ -857,5 +863,6 @@
     </button>
     <script src="./js/pages/home.js" defer></script>
     <script src="./js/components/backtotop.js" defer></script>
+    <script src="./js/components/sliderbr.js" defer></script>
   </body>
 </html>

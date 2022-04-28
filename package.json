@@ -12,7 +12,7 @@
     {
       "name": "Rimantas",
       "url": "https://github.com/belauzas"
-    }, 
+    },
     {
       "name": "Diana O.",
       "url": "https://github.com/Nuotaikos"
@@ -33,10 +33,12 @@
       "name": "Laurynas D.",
       "url": "https://github.com/laurisdid"
     }
-
   ],
   "license": "MIT",
   "devDependencies": {
     "dead-server": "^1.0.6"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

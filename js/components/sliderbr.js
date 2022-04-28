@@ -37,10 +37,3 @@ $(document).ready(function () {
     ],
   });
 });
-$('btnDesineBr').click(function() {
-    $(this).slickNext();
-});
-  $('btnKaireBr').click(function() {
-    $(this).slickPrev();
-});
-  

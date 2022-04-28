@@ -59,7 +59,7 @@
 }
 
 .header-container .dropbtn {
-    padding: 20px 28px;
+    padding: 20px 28px 35px 28px;
     font-weight: 500;
     font-size: 19px;
     text-decoration: none;
@@ -87,7 +87,6 @@
     text-decoration: none;
     width: 260px;
     padding: 30px;
-    margin-top: 15px;
 }
 .dropdown:hover .dropdown-content{
     display: block; 
@@ -406,8 +405,6 @@ font-size: 30px;
 .syllabus-row.syllabus-list-open .syllabus-angle-down {
     display: none;
 }
-
-
 /* for javascript end*/
 .syllabus-list::before {
     content: '';
@@ -469,11 +466,9 @@ font-size: 30px;
     }
     .syllabus-angle-up {
         right: 4%;
-        top: 205px;
     }
     .syllabus-angle-down {
         right: 4%;
-        top: 214px;
     }
 }
 @media (max-width: 767px) {

@@ -67,6 +67,10 @@
     background-color: transparent;
     border: none;
 }
+.header-container .primarycolor{
+    color: var(--primary-color)
+}
+
 @media (max-width: 1199px) {
     .header-container .dropbtn {
         padding: 20px 8px;

@@ -229,15 +229,67 @@
 }
 
 .right-column > .hero-video > .upper-pic {
-  width: 100%;
+  max-width: 100%;
   height: fit-content;
 }
 
-.right-column > .hero-video > .hero-btn-play{
+.hero-btn-play{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*hero  video styling for java-script */
+
+.hero-video-container {
+    position:fixed;
+    z-index: 100;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 1, 0, 0.75);
+    flex-direction:column;
+    display:none;
+}
+.video-esc-box{
+    display: flex;
+    flex-direction:column;
+    width: 820px;
+    height: 450px;
+    flex-shrink: 5;
+}
+.hero-youtube {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.hero-youtube-x {
+    color: #fff;
+    display:flex;
+    font-size: 20px;
+    align-self: flex-end; 
+    padding: 15px;
+}
+.hero-youtube-x:hover {
+    cursor: pointer;
+}
+/* turn on video with javasript */
+body.hero-youtube-on {
+    overflow: hidden;
+}
+body.hero-youtube-on .hero-video-container {
+    display: flex;   
+}
+/* hero java-sript ends */
+@media (max-width:991px) {
+    .video-esc-box{
+        width: 100vw;
+        height: 56.25vw;
+    }
 }
 /*  hero ends here */
 

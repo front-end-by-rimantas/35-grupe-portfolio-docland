@@ -1,7 +1,16 @@
 // component imports
+import "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+import { topFunction,scrollFunction} from '../components/backtotop.js';
+import { slickSliderbr } from '../components/sliderbr.js';
 import { heroPlay, heroPlayOff } from '../components/hero-play/hero-play.js';
 import { scrollFunc } from '../components/header/header.js';
+
 // components execution
+$(() => {
+  slickSliderbr("#slickslider");
+  $("#backToTopBtn").on("click",topFunction);
+});
+
 
 /* header starts here */
 addEventListener('scroll', scrollFunc);
@@ -60,3 +69,7 @@ for (let i = 0; i < syllabusRowDOM.length; i++){
 
 /*  footer starts here */
 /*  footer ends here */
+
+
+
+window.onscroll = function() {scrollFunction()};

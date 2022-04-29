@@ -1,5 +1,8 @@
-$(document).ready(function () {
-  $(".sliderbr").slick({
+import "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+import "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js";
+function slickSliderbr(selector){
+
+  $(selector).slick({
     infinite: true,
     arrows: true,
     dots: false,
@@ -36,11 +39,6 @@ $(document).ready(function () {
       },
     ],
   });
-});
-$('btnDesineBr').click(function() {
-    $(this).slickNext();
-});
-  $('btnKaireBr').click(function() {
-    $(this).slickPrev();
-});
-  
+
+}
+export { slickSliderbr }

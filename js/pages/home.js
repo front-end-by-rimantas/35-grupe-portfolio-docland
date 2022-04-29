@@ -8,6 +8,7 @@ import { scrollFunc } from '../components/header/header.js';
 // components execution
 $(() => {
   slickSliderbr("#slickslider");
+  slickSliderbr("#slickslider2",4,"#btnkaire2","#btndesine2");
   $("#backToTopBtn").on("click",topFunction);
 });
 

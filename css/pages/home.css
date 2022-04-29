@@ -560,6 +560,10 @@ border-radius: 10px;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+    height:200px;
+    margin:20px;
+
+    
 }
 
 .benefit-card > .card-icon {

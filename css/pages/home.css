@@ -67,6 +67,10 @@
     background-color: transparent;
     border: none;
 }
+.header-container .primarycolor{
+    color: var(--primary-color)
+}
+
 @media (max-width: 1199px) {
     .header-container .dropbtn {
         padding: 20px 8px;
@@ -348,6 +352,7 @@ border-radius: 10px;
 .buttonai > .btnKaireBr:hover{
     color: var(--primary-color-anti);
     background: var(--darker-blue);
+    cursor: pointer;
 }
 .buttonai > .btnDesineBr{
     width: 50px;
@@ -361,6 +366,7 @@ border-radius: 10px;
 .buttonai > .btnDesineBr:hover{
     color: var(--primary-color-anti);
     background: var(--darker-blue);
+    cursor: pointer;
 }
 .hedercarusel{
     font-size: 40px;
@@ -556,6 +562,10 @@ border-radius: 10px;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+    height:200px;
+    margin:20px;
+
+    
 }
 
 .benefit-card > .card-icon {
@@ -596,6 +606,7 @@ border-radius: 10px;
     .buttonai-center > .btnKaire:hover{
         color: var(--primary-color-anti);
         background: var(--darker-blue);
+        cursor: pointer;
     }
     .buttonai-center > .btnDesine{
         width: 50px;
@@ -609,6 +620,7 @@ border-radius: 10px;
     .buttonai-center > .btnDesine:hover{
         color: var(--primary-color-anti);
         background: var(--darker-blue);
+        cursor: pointer;
     }
 
 /*  course benefits ends here */
@@ -740,6 +752,7 @@ border-radius: 10px;
 .buttonai-center > .btnKaire:hover{
     color: var(--primary-color-anti);
     background: var(--darker-blue);
+    cursor: pointer;
 }
 .buttonai-center > .btnDesine{
     width: 50px;
@@ -753,6 +766,7 @@ border-radius: 10px;
 .buttonai-center > .btnDesine:hover{
     color: var(--primary-color-anti);
     background: var(--darker-blue);
+    cursor: pointer;
 }
 
 /*  reviews ends here */
@@ -956,5 +970,8 @@ border-radius: 10px;
     font-weight: 200;
     line-height: 30px;
   }
-  
+  .row1 {
+    margin-left:10% ;
+    margin-right:10%;
+  }
 /*  footer ends here */

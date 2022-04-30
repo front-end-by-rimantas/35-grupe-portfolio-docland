@@ -30,7 +30,7 @@
                     <i class="fa fa-bars hamburger hidden-lg"></i>
                     <div class="hidden visible-lg">
                         <div class="dropdown">
-                            <button class="dropbtn" href="#">Home</button>
+                            <button class="dropbtn primarycolor" href="#" >Home</button>
                             <div class="dropdown-content">
                                 <a class="home-dropdown-1" href="#">Plugins</a>
                                 <a class="home-dropdown-1" href="#">Email marketing</a>
@@ -211,8 +211,8 @@
             <h2 class="section-title-h2">What You'll Learn From This Course</h2> 
         </div>
         <div class="buttonai hidden visible-lg visible-xl ">
-            <button class="btnKaireBr prevArrow slick-arrow slide-next">&lt</button>
-            <button class="btnDesineBr nextArrow slick-arrow slide-prev">></button>
+            <button class="btnKaireBr prevArrow slick-arrow slide-next fa fa-angle-left" id="btnKaireBr"></button>
+            <button class="btnDesineBr nextArrow slick-arrow slide-prev fa fa-angle-right"id="btnDesineBr"></button>
         </div>
     </div>
     <div class="row">
@@ -587,48 +587,66 @@
         <div class="row">
             <h2 class="col-12 section-title-h2">Course Benefit</h2>
         </div>
-        <div class="row">
+        <div class="row" id="slickslider2">
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3 bg-light benefit-card">
                 <div class="card-icon bg-primary-color">
                     <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                 </div>
                 <div class="card-description">
                     <h4 class="section-title-h4">Flexible Deadline</h4>
-                    <p class="text-pricing">Lorem Lorem Lorem Lorem Lorem  ipsum dolor veritati.</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 bg-light benefit-card">
-                <div class="card-icon bg-primary-color">
-                    <i class="fa fa-files-o" aria-hidden="true"></i>
-                    </div>
-                <div class="card-description">
-                    <h4 class="section-title-h4">Project Reviews</h4>
-                    <p class="text-pricing">Lorem Lorem Lorem Lorem Lorem  ipsum dolor veritati.</p>
+                    <p class="text-pricing">Lorem Lorem Lorem Lorem Lorem ipsum dolor veritati.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3 bg-light benefit-card">
                 <div class="card-icon bg-primary-color">
                     <i class="fa fa-globe" aria-hidden="true"></i>
-                    </div>
+                </div>
                 <div class="card-description">
                     <h4 class="section-title-h4">100% Online</h4>
-                    <p class="text-pricing"> Lorem Lorem Lorem Lorem Lorem  ipsum dolor veritati.</p>
+                    <p class="text-pricing"> Lorem Lorem Lorem Lorem Lorem ipsum dolor veritati.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 bg-light benefit-card">
+                <div class="card-icon bg-primary-color">
+                    <i class="fa fa-files-o" aria-hidden="true"></i>
+                </div>
+                <div class="card-description">
+                    <h4 class="section-title-h4">Project Reviews</h4>
+                    <p class="text-pricing">Lorem Lorem Lorem Lorem Lorem ipsum dolor veritati.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 bg-light benefit-card">
+                <div class="card-icon bg-primary-color">
+                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                </div>
+                <div class="card-description">
+                    <h4 class="section-title-h4">Flexible Deadline</h4>
+                    <p class="text-pricing">Lorem Lorem Lorem Lorem Lorem ipsum dolor veritati.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 bg-light benefit-card">
+                <div class="card-icon bg-primary-color">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </div>
+                <div class="card-description">
+                    <h4 class="section-title-h4">100% Online</h4>
+                    <p class="text-pricing"> Lorem Lorem Lorem Lorem Lorem ipsum dolor veritati.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3 bg-light benefit-card">
                 <div class="card-icon bg-primary-color">
                     <i class="fa fa-grav" aria-hidden="true"></i>
-                    </div>
+                </div>
                 <div class="card-description">
                     <h4 class="section-title-h4">1-1 Mentoring</h4>
-                    <p class="text-pricing">Lorem Lorem Lorem Lorem Lorem  ipsum dolor veritati.</p>
+                    <p class="text-pricing">Lorem Lorem Lorem Lorem Lorem ipsum dolor veritati.</p>
                 </div>
             </div>
+         </div>
             <div class="buttonai-center hidden visible-lg visible-xl center">
-                <button class="btnKaire">&lt</button>
-                <button class="btnDesine">&gt</button>
-            </div>   
-        </div>
+                <button class="btnKaire fa fa-angle-left" id="btnkaire2"></button>
+                <button class="btnDesine fa fa-angle-right" id="btndesine2"></button>
+            </div>
     </section>
     <!--  course benefits ends here -->
 
@@ -725,8 +743,8 @@
         </div>
 
         <div class="buttonai-center hidden visible-lg visible-xl center">
-            <button class="btnKaire">&lt</button>
-            <button class="btnDesine">&gt</button>
+            <button class="btnKaire fa fa-angle-left"></button>
+            <button class="btnDesine fa fa-angle-right"></button>
         </div>
 
         <div class="row center">
@@ -821,7 +839,9 @@
    
     <!--  footer starts here -->
     <footer class="container">
+        <div class="row1">
         <div class="FooterRow">
+           
             <div class="Docland">
                 <h2 class="footerh2">Docland</h2>
                 <p class="greytext">Aenean non accumsan ante. Duis et risus accumsan sem tempus porta nec sit amet est. Sed ut euismod quam. Suspendisse potenti. Aliquam fringilla orci tincidunt sit amet est.</p>
@@ -858,6 +878,7 @@
                         <button class="subscribe btn btn-sub">Subscribe</button>
                     </div>
             </div>
+        </div>
         </div>
     </footer>
     <!--  footer ends here -->

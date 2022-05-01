@@ -4,6 +4,7 @@ import { topFunction,scrollFunction} from '../components/backtotop.js';
 import { slickSliderbr } from '../components/sliderbr.js';
 import { heroPlay, heroPlayOff } from '../components/hero-play/hero-play.js';
 import { scrollFunc } from '../components/header/header.js';
+import { formsButton } from "../form.js";
 
 // components execution
 $(() => {
@@ -63,6 +64,7 @@ for (let i = 0; i < syllabusRowDOM.length; i++){
 /*  reviews ends here */
 
 /*  contact form starts here */
+formsButton ();
 /*  contact form ends here */
 
 /*  instructors starts here */

@@ -60,7 +60,7 @@ for (let i = 0; i < syllabusRowDOM.length; i++){
 
 /*  reviews starts here */
 $(() => {
-    slickSliderbr("#StudentReviews",2,"#ikaire","#idesine");
+    slickSliderbr("#StudentReviews", 2 ,"#ikaire","#idesine");
     $("#backToTopBtn").on("click",topFunction);
   });
   

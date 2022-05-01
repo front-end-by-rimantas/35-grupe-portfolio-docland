@@ -699,9 +699,6 @@ border-radius: 10px;
 /*  pricing ends here */
 
 /*  reviews starts here */
-/* .review-row{
-    display: block;
-} */
 
 .student-block {
     padding: 40px;
@@ -729,7 +726,7 @@ border-radius: 10px;
     width: 100%;
 }
 
-.buttonai-center > .btnKaire{
+.buttonai-center > .btnKaireBr{
     width: 50px;
 height: 50px;
 color: var(--darker-blue);
@@ -739,11 +736,11 @@ border:none;
 font-size: 30px;
 border-radius: 10px;
 }
-.buttonai-center > .btnKaire:hover{
+.buttonai-center > .btnKaireBr:hover{
     color: var(--primary-color-anti);
     background: var(--darker-blue);
 }
-.buttonai-center > .btnDesine{
+.buttonai-center > .btnDesineBr{
     width: 50px;
     height: 50px;
     color: var(--darker-blue);
@@ -752,7 +749,7 @@ border-radius: 10px;
     font-size: 30px;
     border-radius: 10px;
 }
-.buttonai-center > .btnDesine:hover{
+.buttonai-center > .btnDesineBr:hover{
     color: var(--primary-color-anti);
     background: var(--darker-blue);
 }

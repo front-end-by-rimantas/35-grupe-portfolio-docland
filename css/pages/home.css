@@ -552,7 +552,7 @@ border-radius: 10px;
 
 /*  course benefits starts here */
 
-.benefit-card {
+.benefit-card {0
     border-radius: 25px;
     position: relative;
     overflow: hidden;
@@ -699,14 +699,16 @@ border-radius: 10px;
 /*  pricing ends here */
 
 /*  reviews starts here */
+/* .review-row{
+    display: block;
+} */
 
 .student-block {
     padding: 40px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
-    margin-bottom: 10px;
+    margin: 10px 20px;
 }
 
 .student-profile {

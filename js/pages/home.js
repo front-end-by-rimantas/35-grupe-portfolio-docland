@@ -59,6 +59,11 @@ for (let i = 0; i < syllabusRowDOM.length; i++){
 /*  pricing ends here */
 
 /*  reviews starts here */
+$(() => {
+    slickSliderbr("#StudentReviews",2,"#ikaire","#idesine");
+    $("#backToTopBtn").on("click",topFunction);
+  });
+  
 /*  reviews ends here */
 
 /*  contact form starts here */

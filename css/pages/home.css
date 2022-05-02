@@ -59,7 +59,7 @@
 }
 
 .header-container .dropbtn {
-    padding: 20px 28px;
+    padding: 20px 28px 35px 28px;
     font-weight: 500;
     font-size: 19px;
     text-decoration: none;
@@ -67,6 +67,10 @@
     background-color: transparent;
     border: none;
 }
+.header-container .primarycolor{
+    color: var(--primary-color)
+}
+
 @media (max-width: 1199px) {
     .header-container .dropbtn {
         padding: 20px 8px;
@@ -87,7 +91,6 @@
     text-decoration: none;
     width: 260px;
     padding: 30px;
-    margin-top: 15px;
 }
 .dropdown:hover .dropdown-content{
     display: block; 
@@ -230,15 +233,67 @@
 }
 
 .right-column > .hero-video > .upper-pic {
-  width: 100%;
+  max-width: 100%;
   height: fit-content;
 }
 
-.right-column > .hero-video > .hero-btn-play{
+.hero-btn-play{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*hero  video styling for java-script */
+
+.hero-video-container {
+    position:fixed;
+    z-index: 100;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 1, 0, 0.75);
+    flex-direction:column;
+    display:none;
+}
+.video-esc-box{
+    display: flex;
+    flex-direction:column;
+    width: 820px;
+    height: 450px;
+    flex-shrink: 5;
+}
+.hero-youtube {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.hero-youtube-x {
+    color: #fff;
+    display:flex;
+    font-size: 20px;
+    align-self: flex-end; 
+    padding: 15px;
+}
+.hero-youtube-x:hover {
+    cursor: pointer;
+}
+/* turn on video with javasript */
+body.hero-youtube-on {
+    overflow: hidden;
+}
+body.hero-youtube-on .hero-video-container {
+    display: flex;   
+}
+/* hero java-sript ends */
+@media (max-width:991px) {
+    .video-esc-box{
+        width: 100vw;
+        height: 56.25vw;
+    }
 }
 /*  hero ends here */
 
@@ -284,29 +339,41 @@
   right: 30px;
 }
 
-.buttonai > .btnKaire{
+.buttonai > .btnKaireBr{
 width: 50px;
 height: 50px;
-color: var(--primary-color-anti);
+color: var(--darker-blue);
 background: var(--primary-color);
 margin-right: 20px;
 border:none;
 font-size: 30px;
+border-radius: 10px;
 }
-.buttonai > .btnDesine{
+.buttonai > .btnKaireBr:hover{
+    color: var(--primary-color-anti);
+    background: var(--darker-blue);
+    cursor: pointer;
+}
+.buttonai > .btnDesineBr{
     width: 50px;
     height: 50px;
-    color: var(--primary-color-anti);
+    color: var(--darker-blue);
     background: var(--primary-color);
     border:none;
-    font-size: 30px
+    font-size: 30px;
+    border-radius: 10px;
+}
+.buttonai > .btnDesineBr:hover{
+    color: var(--primary-color-anti);
+    background: var(--darker-blue);
+    cursor: pointer;
 }
 .hedercarusel{
     font-size: 40px;
 }
 .caruimg{
-    height: 350px;
-    width : 250px;
+    height: 80%;
+    width : 100%;
     padding: 40px;
     padding-bottom: 25px;
     filter: invert(100%);
@@ -406,8 +473,6 @@ font-size: 30px;
 .syllabus-row.syllabus-list-open .syllabus-angle-down {
     display: none;
 }
-
-
 /* for javascript end*/
 .syllabus-list::before {
     content: '';
@@ -469,11 +534,9 @@ font-size: 30px;
     }
     .syllabus-angle-up {
         right: 4%;
-        top: 205px;
     }
     .syllabus-angle-down {
         right: 4%;
-        top: 214px;
     }
 }
 @media (max-width: 767px) {
@@ -499,6 +562,10 @@ font-size: 30px;
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+    height:200px;
+    margin:20px;
+
+    
 }
 
 .benefit-card > .card-icon {
@@ -529,21 +596,32 @@ font-size: 30px;
 .buttonai-center > .btnKaire{
     width: 50px;
     height: 50px;
-    color: var(--primary-color-anti);
+    color: var(--darker-blue);
     background: var(--primary-color);
     margin-right: 20px;
     border:none;
     font-size: 30px;
+    border-radius: 10px;
     }
-
-.buttonai-center > .btnDesine{
-    width: 50px;
-    height: 50px;
-    color: var(--primary-color-anti);
-    background: var(--primary-color);
-    border:none;
-    font-size: 30px;
-}
+    .buttonai-center > .btnKaire:hover{
+        color: var(--primary-color-anti);
+        background: var(--darker-blue);
+        cursor: pointer;
+    }
+    .buttonai-center > .btnDesine{
+        width: 50px;
+        height: 50px;
+        color: var(--darker-blue);
+        background: var(--primary-color);
+        border:none;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+    .buttonai-center > .btnDesine:hover{
+        color: var(--primary-color-anti);
+        background: var(--darker-blue);
+        cursor: pointer;
+    }
 
 /*  course benefits ends here */
 
@@ -663,21 +741,32 @@ font-size: 30px;
 
 .buttonai-center > .btnKaire{
     width: 50px;
-    height: 50px;
-    color: white;
-    background: aqua;
-    margin-right: 20px;
-    border:none;
-    font-size: 30px;
-    }
-
+height: 50px;
+color: var(--darker-blue);
+background: var(--primary-color);
+margin-right: 20px;
+border:none;
+font-size: 30px;
+border-radius: 10px;
+}
+.buttonai-center > .btnKaire:hover{
+    color: var(--primary-color-anti);
+    background: var(--darker-blue);
+    cursor: pointer;
+}
 .buttonai-center > .btnDesine{
     width: 50px;
     height: 50px;
-    color: white;
-    background: aqua;
+    color: var(--darker-blue);
+    background: var(--primary-color);
     border:none;
     font-size: 30px;
+    border-radius: 10px;
+}
+.buttonai-center > .btnDesine:hover{
+    color: var(--primary-color-anti);
+    background: var(--darker-blue);
+    cursor: pointer;
 }
 
 /*  reviews ends here */
@@ -881,5 +970,8 @@ font-size: 30px;
     font-weight: 200;
     line-height: 30px;
   }
-  
+  .row1 {
+    margin-left:10% ;
+    margin-right:10%;
+  }
 /*  footer ends here */

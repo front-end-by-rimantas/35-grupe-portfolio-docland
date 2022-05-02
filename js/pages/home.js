@@ -9,6 +9,7 @@ import { scrollFunc } from '../components/header/header.js';
 $(() => {
   slickSliderbr("#slickslider");
   slickSliderbr("#slickslider2",4,"#btnkaire2","#btndesine2");
+  slickSliderbr("#slickslider3",2,"#ikaire","#idesine")
   $("#backToTopBtn").on("click",topFunction);
 });
 

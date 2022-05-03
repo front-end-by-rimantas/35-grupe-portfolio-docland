@@ -1,0 +1,232 @@
+.header-container {
+    padding: 0px;
+    width: 100%;
+    height: 110px;
+    background-color: transparent;
+    z-index: 1;
+    position:absolute;
+    transition: all 0.5s linear;
+  }
+  /* java-script starts*/
+  .header-container.header-on-scroll-up {
+      padding: 0px;
+      background-color: var(--primary-color-anti);
+      box-shadow: 0 2px 15px rgb(233, 231, 231);
+      position:fixed;
+      animation-name: header-on-scroll;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+  }
+  .header-container.header-on-scroll-up .login::after{
+      background-color: var(--primary-color-anti);
+  }
+  /* java-script ends*/
+  @keyframes header-on-scroll{
+      0% {
+          margin-top: -4%;
+          background-color: var(--primary-color-anti);
+      }
+      100% {
+          margin-top: 0%;
+          background-color: var(--primary-color-anti);
+      }
+  }
+  .header-container .logo {
+    float: left;
+    padding: 20px 10px;
+    margin: 0;
+  }
+  
+  .header-container .navigation {
+    float: right;
+  }
+  .dropdown {
+      position: relative;
+      display:inline-block;
+  }
+  
+  .header-container .dropbtn {
+      padding: 20px 28px 35px 28px;
+      font-weight: 500;
+      font-size: 19px;
+      text-decoration: none;
+      color: var(--description-color);
+      background-color: transparent;
+      border: none;
+  }
+  .header-container .primarycolor{
+      color: var(--primary-color)
+  }
+  
+  @media (max-width: 1199px) {
+      .header-container .dropbtn {
+          padding: 20px 8px;
+      }
+  }
+  
+  .header-container .dropbtn:hover {
+      color: var(--primary-color);
+      transition-duration: 0.7s;
+      transition-timing-function: linear;
+      cursor: pointer;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--primary-color-anti);
+      box-shadow: 0 2px 15px rgb(233, 231, 231);
+      text-decoration: none;
+      width: 260px;
+      padding: 30px;
+  }
+  .dropdown:hover .dropdown-content{
+      display: block; 
+  }
+  .dropdown-content .home-dropdown-1{
+      text-decoration: none;
+      display:block;
+      padding: 8px 0;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.6em;
+      color: var(--description-color);
+      line-height: 1.6em;
+      text-transform: capitalize;
+  }
+  .dropdown-content:nth-child(2) .home-dropdown-1:nth-child(8){
+      color: var(--primary-color);
+  }
+  .dropdown-content:hover .home-dropdown-1{
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
+  }
+  .dropdown-content .home-dropdown-1:hover {
+      color: var(--primary-color);
+      margin-left: 8px
+  }
+  
+  .header-container .hamburger:hover {
+    cursor: pointer;
+  }
+  
+  .header-container .login {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--description-color);
+    display: inline-block;
+    padding-bottom: 8px;
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color) solid 2px;
+    margin: 17px 20px 0px 20px;
+    position:relative
+  }
+  .header-container .login::after {
+      content: '';
+      height: 2px;
+      width: 25px;
+      left: -50%;
+      bottom: -2px;
+      position: absolute;
+      display:inline-block;
+      background-color:var(--background-color);
+      transition: all 0.5s linear;
+  }
+  .login:hover::after{
+      animation: loginAnimation 0.7s;
+      animation-iteration-count: 1 forwards;
+  }
+  @keyframes loginAnimation {
+      0% {
+          left: -50%;
+      }
+      100% {
+          left: 100%;
+      }
+  }
+/* hamburger navigation starts*/
+.hamburger {
+    font-size: 35px;
+    padding: 12px 5px;
+    font-weight: 100;
+    color: var(--description-color);
+  }
+.burger-nav {
+    display:none;
+}
+.burger-nav.active .hamburger {
+    display:none;
+}
+.burger-nav-row, .burger-nav-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.burger-nav-logo{
+    margin-bottom:40px;
+}
+.burger-nav-arrow, .burger-down {
+    color: var(--description-color);
+    font-size: 20px;
+}
+.burger-down {
+    display:none;
+}
+.burger-nav-arrow:hover, .burger-down:hover {
+    cursor:pointer;
+}
+.burger-nav-x {
+    font-size: 23px;
+    color: var(--description-color);
+}
+.burger-nav-x:hover {
+    cursor: pointer;
+    font-size: 25px;
+}
+.dropdown-content > .home-dropdown-1{
+    display:block;
+    width: 100%;
+}
+.burger-nav .home-dropdown-1:hover {
+    color: var(--primary-color);
+    margin-left: 0;
+}
+.burger-down {
+    display:none;
+}
+ .burger-nav.active{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:-200px;
+    background-color: var(--primary-color-anti);
+    width: 400px;
+    height: 100%;
+    padding: 45px;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.3);
+    animation-name: burger-nav;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    overflow: scroll;
+}
+.burger-nav.active .dropdown-content {
+    display:none;
+}
+.burger-nav.active .dropdown-content.active {
+    display: block;
+    position: static;
+    box-shadow: none;
+}
+
+@keyframes burger-nav {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 400px;
+    }
+}
+

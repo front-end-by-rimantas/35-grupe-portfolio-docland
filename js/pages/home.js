@@ -16,6 +16,27 @@ $(() => {
 
 /* header starts here */
 addEventListener('scroll', scrollFunc);
+const burgerNavDOM = document.querySelector('.burger-nav');
+const hamburgerDOM = document.querySelector('.hamburger');
+hamburgerDOM.addEventListener('click', () => {burgerNavDOM.classList.add('active')});
+
+const navExitDOM = document.querySelector('.burger-nav-x');
+navExitDOM.addEventListener('click', () => {burgerNavDOM.classList.remove('active')});
+
+const burgerNavArrowDOM = burgerNavDOM.querySelectorAll('.burger-nav-arrow');
+const burgerNavDropDOM = burgerNavDOM.querySelectorAll('.dropdown-content');
+
+burgerNavToggle(burgerNavArrowDOM[0], burgerNavDropDOM[0]);
+burgerNavToggle(burgerNavArrowDOM[1], burgerNavDropDOM[1]);
+burgerNavToggle(burgerNavArrowDOM[2], burgerNavDropDOM[2]);
+burgerNavToggle(burgerNavArrowDOM[3], burgerNavDropDOM[3]);
+burgerNavToggle(burgerNavArrowDOM[4], burgerNavDropDOM[4]);
+
+function burgerNavToggle (burgerNavArrow, burgerNavDrop) {
+    burgerNavArrow.addEventListener('click', () => {
+        burgerNavDrop.classList.toggle('active') 
+    })
+}
 /* header ends here */
 
 /* scroll up button starts here */
